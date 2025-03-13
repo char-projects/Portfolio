@@ -31,6 +31,8 @@
     "react-tilt": "^0.1.4",
     "react-ts-typewriter": "^0.1.8-b",
     "react-vertical-timeline-component": "^3.6.0",
+    "recharts": "^2.15.1",
+    "styled-components": "^6.1.15",
     "three": "^0.149.0"
   },
   "devDependencies": {

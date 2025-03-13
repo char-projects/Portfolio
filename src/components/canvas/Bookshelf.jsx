@@ -152,7 +152,7 @@ const AppPage = ({ app, onClose }) => {
         >
             <button
                 onClick={handleClose}
-                className="absolute top-2 right-2 bg-gray-400 px-3 py-1 rounded hover:bg-gray-300"
+                className="absolute top-2 right-2 bg-gray-400 px-3 py-1 rounded hover:bg-gray-300 z-50"
             >
                 Close
             </button>

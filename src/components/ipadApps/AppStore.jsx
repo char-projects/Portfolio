@@ -35,11 +35,11 @@ const AppStore = () => {
 
     return (
         <div
-            className="bg-gradient-to-br from-[#007aff] to-[#5ac8fa] p-6 flex h-full flex-col shadow-lg"
+            className="bg-gradient-to-br from-[#007aff] to-[#5ac8fa] p-6 flex h-full flex-col shadow-3xl"
         >
             <div className="header flex items-center justify-between mt-6 mb-8">
                 <h1 className="text-white text-3xl font-semibold">Tech Stack</h1>
-                <button className="app-icon bg-white rounded-full w-10 h-10 flex items-center justify-center">
+                <button className="app-icon bg-white hover:bg-gray-100 rounded-full w-10 h-10 flex items-center justify-center">
                     <span className="text-blue-500 font-semibold text-lg">+</span>
                 </button>
             </div>
@@ -79,7 +79,7 @@ const AppStore = () => {
             </div>
             <div className="flex justify-center items-center mt-10">
                 <button
-                    className="bg-white text-blue-500 font-bold py-2 px-4 rounded-full"
+                    className="bg-white hover:bg-gray-100 text-blue-500 font-bold py-2 px-4 rounded-full"
                 >
                     Update Stack
                 </button>

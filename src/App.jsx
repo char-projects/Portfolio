@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { About, Contact, Experience, Languages, Hero, Navbar, Footer, Tech, Works, StarsCanvas } from "./components";
+import { About, Contact, Experience, Languages, Hero, Navbar, Footer, Tech, Works, StarsCanvas, Tiles } from "./components";
 import { arrow } from "./assets";
 
 const ScrollToTopButton = () => {
@@ -34,24 +34,25 @@ const ScrollToTopButton = () => {
 const App = () => {
   return (
       <BrowserRouter>
-        <div className="relative z-0 bg-primary">
-          <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
-            <Navbar />
-            <Hero />
-          </div>
-          <About />
-          <Experience />
-          <Tech />
-          <Works />
-          <Languages />
-          <div className="relative z-0">
-            <Contact />
-            <StarsCanvas />
-            <Footer />
-          </div>
-          <ScrollToTopButton />
-        </div>
-      </BrowserRouter>
+          <div className='relative z-0 bg-primary'>
+              <div className="relative z-0">
+                  < Tiles />
+                  <Navbar />
+                  <Hero />
+              </div>
+              <About />
+              <Experience />
+              <Tech />
+              <Works />
+              <Languages />
+              <div className='relative z-0'>
+                  <Contact />
+                  <Footer />
+                  <StarsCanvas />
+              </div>
+              <ScrollToTopButton />
+            </div>
+         </BrowserRouter>
   );
 };
 

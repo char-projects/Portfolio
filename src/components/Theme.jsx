@@ -1,6 +1,5 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
-import { sun, moon } from "../assets";
 
 function ThemeButton() {
     const [mounted, setMounted] = useState(false);

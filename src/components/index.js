@@ -1,4 +1,4 @@
-import { Ipad, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
+import { Ipad, BallCanvas, ComputersCanvas, Tiles, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
@@ -26,6 +26,7 @@ export {
   CanvasLoader,
   Ipad,
   BallCanvas, 
-  ComputersCanvas, 
+  ComputersCanvas,
+  Tiles,
   StarsCanvas
 };

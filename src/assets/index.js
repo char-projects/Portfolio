@@ -9,8 +9,6 @@ import london from "./education/42london.png";
 import fractol from "./works/fractol.png";
 import minishell from "./works/minishell.png";
 import pushswap from "./works/pushswap.png";
-import moon from "./moon_icon.svg";
-import sun from "./sun_icon.svg";
 import profile_pic from "./about/profile_pic.jpg";
 import book_icon from "./book_icon.jpg";
 import arrow from "./arrow.svg";
@@ -72,8 +70,6 @@ export {
   fractol,
   minishell,
   pushswap,
-  moon,
-  sun,
   profile_pic,
   gym,
   book_icon,

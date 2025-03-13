@@ -18,7 +18,7 @@ const ServiceCard = ({ index, title, icon }) => (
     >
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-            className="w-full bg-gradient-to-r from-purple-500 via-pink-300 to-red-500 p-[1px] rounded-[20px] shadow-card"
+            className="w-full bg-gradient-to-r from-gray-600 via-gray-700 to-slate-900 p-[1px] rounded-[20px] shadow-card"
         >
             <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
                 <img

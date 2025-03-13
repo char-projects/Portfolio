@@ -1,7 +1,6 @@
-import React from "react";
-import { MapPin } from "lucide-react";
-
-// WHERE IS THE CLOSE BUTTON ??
+import React, {useState, useRef} from "react";
+import {MapPin, Home} from "lucide-react";
+import {motion} from "framer-motion";
 
 const travelSpots = [
     {
@@ -48,7 +47,36 @@ const travelSpots = [
     },
 ];
 
+const home = [
+    {
+        id: 1,
+        name: "Bavaria, Germany",
+        img: "https://media.istockphoto.com/id/1747238977/photo/old-town-hall-in-bamberg.jpg?s=612x612&w=0&k=20&c=cBeh_GkmxzwHu-na62J-1gZwNFbluZWS9URj4pBxMAs=",
+        description: "I spent most of my life there. It's a great place to grow up in",
+        mapLink: "https://maps.app.goo.gl/kTAuUGjcaYSoxvKz5",
+    },
+    {
+        id: 2,
+        name: "Málaga, Spain",
+        img: "https://www.visitanddo.com/wp-content/uploads/2024/10/Mirador-de-Gibralfaro.jpg",
+        description: "I've spent almost 3 years here. I love the beach and the sun",
+        mapLink: "https://maps.app.goo.gl/tYSWUs4pTp4rGAP58",
+    },
+]
+
 const GoogleMaps = () => {
+    const [showEasterEgg, setShowEasterEgg] = useState(false);
+    const contentRef = useRef(null);
+
+    const handleHomeButtonClick = () => {
+        setShowEasterEgg(!showEasterEgg);
+        if (contentRef.current) {
+            contentRef.current.scrollTo({
+                bottom: 200, // Adjust the number to scroll by the desired amount
+                behavior: "smooth",
+            });
+        };
+    };
     return (
         <div className="relative bg-gray-900 text-white min-h-screen w-full p-4">
             {/* Floating Search Bar */}
@@ -86,6 +114,38 @@ const GoogleMaps = () => {
                     </div>
                 ))}
             </div>
+            <div className="mt-12 flex justify-center relative">
+                <button className="px-8 py-2 border rounded-lg text-white bg-gray-800 hover:bg-gray-700" onClick={handleHomeButtonClick}>
+                    {showEasterEgg ? "Hide Home" : "Show Home"}
+                </button>
+                <motion.div animate={{ rotate: showEasterEgg ? 360 : 0 }}>
+                    <Home className="absolute right-0 text-gray-400" />
+                </motion.div>
+            </div>
+            {showEasterEgg && (
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                    {home.map((place) => (
+                        <div
+                            key={place.id}
+                            className="relative bg-gray-800 rounded-2xl overflow-hidden shadow-lg hover:scale-105 transition-transform duration-300"
+                        >
+                            <img src={place.img} alt={place.name} className="w-full h-48 object-cover" />
+                            <div className="p-4">
+                                <h2 className="text-xl font-semibold mb-1">{place.name}</h2>
+                                <p className="text-gray-400 text-sm">{place.description}</p>
+                            </div>
+                            <a
+                                href={place.mapLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="absolute top-4 right-4 bg-blue-500 p-2 rounded-full hover:bg-blue-600 transition"
+                            >
+                                <MapPin className="text-white" size={20} />
+                            </a>
+                        </div>
+                    ))}
+                </div>
+            )}
         </div>
     );
 };
