@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { About, Contact, Experience, Languages, Hero, Navbar, Footer, Tech, Works, StarsCanvas, Tiles } from "./components";
+import { About, Contact, Experience, Languages, Hero, Navbar, Footer, Tech, Works, StarsCanvas } from "./components";
 import { arrow } from "./assets";
 
 const ScrollToTopButton = () => {
@@ -22,7 +22,7 @@ const ScrollToTopButton = () => {
   return (
       <button
           onClick={scrollToTop}
-          className={`fixed bottom-5 right-5 p-3 bg-pink-200 text-white rounded-full shadow-lg transition-opacity duration-300 ${
+          className={`fixed bottom-5 right-5 p-3 bg-fuchsia-300 text-white rounded-full shadow-lg shadow-gray-600 transition-opacity duration-300 ${
               visible ? "opacity-100" : "opacity-0 pointer-events-none"
           }`}
       >
@@ -34,25 +34,21 @@ const ScrollToTopButton = () => {
 const App = () => {
   return (
       <BrowserRouter>
-          <div className='relative z-0 bg-primary'>
-              <div className="relative z-0">
-                  < Tiles />
-                  <Navbar />
-                  <Hero />
-              </div>
+          <div className='relative z-0 bg-gradient-to-l from-gray-800 via-black to-gray-800'>
+              <StarsCanvas />
+              <Navbar />
+              <Hero />
               <About />
               <Experience />
               <Tech />
               <Works />
               <Languages />
-              <div className='relative z-0'>
-                  <Contact />
-                  <Footer />
-                  <StarsCanvas />
-              </div>
+              <Contact />
+              <Footer />
+              <StarsCanvas />
               <ScrollToTopButton />
-            </div>
-         </BrowserRouter>
+          </div>
+      </BrowserRouter>
   );
 };
 

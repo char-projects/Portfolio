@@ -80,7 +80,7 @@ const Navbar = () => {
                 whileInView="show"
                 className={`${
                     !toggle ? "hidden" : "flex"
-                } p-6 bg-bgSecondaryLight dark:bg-bgSecondaryDark absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
+                } p-6 bg-gray-700 border border-gray-800 absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
             >
               <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4'>
                 {navLinks.map((nav) => (
@@ -99,11 +99,6 @@ const Navbar = () => {
                       <a href={`#${nav.id}`}>{nav.title}</a>
                     </li>
               ))}
-                  <li
-                      className={`text-white hover:text-white text-[18px] font-medium cursor-pointer`}
-                  >
-                    <ThemeButton />
-                  </li>
               </ul>
             </motion.div>
           </div>

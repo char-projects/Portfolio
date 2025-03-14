@@ -4,6 +4,9 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      textShadow: {
+        fuchsia: '0 15px 20px rgba(240, 171, 252, 0.6)',
+      },
       colors: {
         primary: "#050816",
         secondary: "#aaa6c3",
@@ -19,9 +22,11 @@ module.exports = {
         xs: "450px",
       },
       backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
+        "cloud-pattern": "url('/src/assets/purple_clouds.jpg')",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow'),
+  ],
 };

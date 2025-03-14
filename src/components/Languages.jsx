@@ -23,7 +23,7 @@ const TechBar = ({ inViewport, forwardedRef, h2, p, width }) => {
                     <h2 className="font-semibold">{h2}</h2>
                     <p className="text-gray-200">{p}</p>
                 </div>
-                <span className={`${width} h-[12px] mt-2 bg-gradient-to-r from-red-600 via-purple-500 to-pink-400 block rounded-md transition-all duration-[2500ms] ease-in-out }`} />
+                <span className={`${width} h-[12px] mt-2 bg-gradient-to-r from-fuchsia-400 via-fuchsia-300 to-fuchsia-200 block rounded-md transition-all duration-[2500ms] ease-in-out }`} />
             </div>
         </>
     );

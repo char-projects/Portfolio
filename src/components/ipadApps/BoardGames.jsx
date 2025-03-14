@@ -1,54 +1,60 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Info } from "lucide-react";
 
 const games = {
     "Board Games": [
         {
             name: "Catan",
-            img: "https://upload.wikimedia.org/wikipedia/en/a/a3/Catan-2015-boxart.jpg",
+            img: "/src/assets/ipad/Catan.jpg",
             play: "https://colonist.io/",
             buy: "https://www.amazon.com/CATAN-Board-Game-Discovery-Civilization/dp/B00U26V4VQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.aDf4BYLqvDvSvqXG8jy4Iev94xK3OUunr17NcfUL7mFbPy0uyX0uyOquucQZJeiVnx7o0an5ylq7WqU8FFqfCDLb0SwKzsyHAOIIMVNBOfPZqProCBXW0s5nd9BOF6yyerKifyFMm7ppuRhZxt7FnCHY7vafX7IEUmn9VRdcZ7bZve50Uco5ouFRfHWP725FXLnvDUDj3bJft0lDvJPa8NE700BzE9rC0vUi8oUrYwg0XnZ3LpFbt-iejk5IQyPHIp_q-SFVVbNF5OIo2OdzM31gYrU2Qb1Wfihk6C2oDiY0JipwXaupNxBmqZZrenRCTw1HkMEuz6sSjxp1SRTyjj564kaUIw-71pNavHzun1D3KjrlhwzVRu0mzhXUhLry_14--ULU-DFMYiqAP8OzcQiBoubax0N1aKZ4KjB0LTe-Af9H5ARd59H2dPcaeZFQ._d3MLtY1cmlycZ7w5OytXUGdmHCb9WRIVybQ_Rgl06U&dib_tag=se&keywords=catan&qid=1741836369&sr=8-2",
         },
         {
             name: "Chess",
-            img: "https://static.vecteezy.com/system/resources/thumbnails/046/621/178/small/illustration-depicts-a-chessboard-set-up-for-a-game-with-all-the-black-and-white-chess-pieces-positioned-on-their-squares-vector.jpg",
+            img: "/src/assets/ipad/Chess.jpg",
             play: "https://www.chess.com/",
             buy: "https://www.pianki.com/medieval-style-giant-chess-set-24kt-gold-sterling-silver-onyx-table-chairs_p11371.html",
         },
         {
             name: "Colt Express",
-            img: "https://upload.wikimedia.org/wikipedia/en/c/c4/Colt_Express_box_cover.jpg",
-            play: "https://colonist.io/",
-            buy: "https://www.amazon.com/CATAN-Board-Game-Discovery-Civilization/dp/B00U26V4VQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.aDf4BYLqvDvSvqXG8jy4Iev94xK3OUunr17NcfUL7mFbPy0uyX0uyOquucQZJeiVnx7o0an5ylq7WqU8FFqfCDLb0SwKzsyHAOIIMVNBOfPZqProCBXW0s5nd9BOF6yyerKifyFMm7ppuRhZxt7FnCHY7vafX7IEUmn9VRdcZ7bZve50Uco5ouFRfHWP725FXLnvDUDj3bJft0lDvJPa8NE700BzE9rC0vUi8oUrYwg0XnZ3LpFbt-iejk5IQyPHIp_q-SFVVbNF5OIo2OdzM31gYrU2Qb1Wfihk6C2oDiY0JipwXaupNxBmqZZrenRCTw1HkMEuz6sSjxp1SRTyjj564kaUIw-71pNavHzun1D3KjrlhwzVRu0mzhXUhLry_14--ULU-DFMYiqAP8OzcQiBoubax0N1aKZ4KjB0LTe-Af9H5ARd59H2dPcaeZFQ._d3MLtY1cmlycZ7w5OytXUGdmHCb9WRIVybQ_Rgl06U&dib_tag=se&keywords=catan&qid=1741836369&sr=8-2",
+            img: "/src/assets/ipad/ColtExpress.jpg",
+            play: "https://en.boardgamearena.com/gamepanel?game=coltexpress",
+            buy: "https://www.amazon.com/Asmodee-COLT01-Colt-Express/dp/B00OZTUQWE",
         },
     ],
     "Card Games": [
         {
+            name: "Cards Against Humanity",
+            img: "https://i.ebayimg.com/images/g/CokAAOSwRuhfAaaw/s-l400.jpg",
+            play: "https://pyx-1.pretendyoure.xyz/zy/game.jsp",
+            buy: "https://www.amazon.com/Cards-Against-Humanity-LLC-CAHUS/dp/B004S8F7QM?ref_=ast_sto_dp",
+        },
+        {
             name: "Coup",
             img: "https://www.toyworld.co.nz/cdn/shop/files/Coup-Card-Game-722301926246-COUIBC.jpg?v=1732091242",
-            play: "https://colonist.io/",
+            play: "https://www.chickenkoup.com/",
             buy: "https://www.amazon.com/Coup-Bluffing-Players-Perfect-Friends/dp/B00GDI4HX4?th=1",
         },
         {
             name: "Bang!",
             img: "https://upload.wikimedia.org/wikipedia/en/7/7b/Bang_box_art.jpg",
-            play: "https://colonist.io/",
+            play: "https://playbanggame.online/",
             buy: "https://www.amazon.com/Bang-Wild-West-DaVinci-Games/dp/B001Q4XWB8",
-        },
+        }
     ],
-    "Games I Want to Code": [
+};
+
+const future = {
+        "Games I Want to Code": [
         {
-            name: "Catan",
-            img: "https://upload.wikimedia.org/wikipedia/en/a/a3/Catan-2015-boxart.jpg",
-            play: "https://colonist.io/",
-            buy: "https://www.amazon.com/CATAN-Board-Game-Discovery-Civilization/dp/B00U26V4VQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.aDf4BYLqvDvSvqXG8jy4Iev94xK3OUunr17NcfUL7mFbPy0uyX0uyOquucQZJeiVnx7o0an5ylq7WqU8FFqfCDLb0SwKzsyHAOIIMVNBOfPZqProCBXW0s5nd9BOF6yyerKifyFMm7ppuRhZxt7FnCHY7vafX7IEUmn9VRdcZ7bZve50Uco5ouFRfHWP725FXLnvDUDj3bJft0lDvJPa8NE700BzE9rC0vUi8oUrYwg0XnZ3LpFbt-iejk5IQyPHIp_q-SFVVbNF5OIo2OdzM31gYrU2Qb1Wfihk6C2oDiY0JipwXaupNxBmqZZrenRCTw1HkMEuz6sSjxp1SRTyjj564kaUIw-71pNavHzun1D3KjrlhwzVRu0mzhXUhLry_14--ULU-DFMYiqAP8OzcQiBoubax0N1aKZ4KjB0LTe-Af9H5ARd59H2dPcaeZFQ._d3MLtY1cmlycZ7w5OytXUGdmHCb9WRIVybQ_Rgl06U&dib_tag=se&keywords=catan&qid=1741836369&sr=8-2",
+            name: "Cub3D",
+            img: "https://reactive.so/static/assets/ray-casting-example.png",
+            description: "A 3D game using the raycasting technique like in the famous Wolfenstein game",
         },
         {
-            name: "Catan",
-            img: "https://upload.wikimedia.org/wikipedia/en/a/a3/Catan-2015-boxart.jpg",
-            play: "https://colonist.io/",
-            buy: "https://www.amazon.com/CATAN-Board-Game-Discovery-Civilization/dp/B00U26V4VQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.aDf4BYLqvDvSvqXG8jy4Iev94xK3OUunr17NcfUL7mFbPy0uyX0uyOquucQZJeiVnx7o0an5ylq7WqU8FFqfCDLb0SwKzsyHAOIIMVNBOfPZqProCBXW0s5nd9BOF6yyerKifyFMm7ppuRhZxt7FnCHY7vafX7IEUmn9VRdcZ7bZve50Uco5ouFRfHWP725FXLnvDUDj3bJft0lDvJPa8NE700BzE9rC0vUi8oUrYwg0XnZ3LpFbt-iejk5IQyPHIp_q-SFVVbNF5OIo2OdzM31gYrU2Qb1Wfihk6C2oDiY0JipwXaupNxBmqZZrenRCTw1HkMEuz6sSjxp1SRTyjj564kaUIw-71pNavHzun1D3KjrlhwzVRu0mzhXUhLry_14--ULU-DFMYiqAP8OzcQiBoubax0N1aKZ4KjB0LTe-Af9H5ARd59H2dPcaeZFQ._d3MLtY1cmlycZ7w5OytXUGdmHCb9WRIVybQ_Rgl06U&dib_tag=se&keywords=catan&qid=1741836369&sr=8-2",
+            name: "Snake in Java",
+            img: "https://www.coolmathgames.com/sites/default/files/2022-04/Nostalgic%20Games%20Snake.png",
+            description: "A snake game using Java and a MySQL database with a full-featured GUI",
         },
     ],
 };
@@ -112,18 +118,17 @@ const BoardGames = () => {
                 </div>
             </StyledWrapper>
             <h1 className="text-4xl font-bold text-black my-5">My Favorite Games</h1>
-            {Object.entries(games).map(([category, games]) => (
+            {Object.entries(games).map(([category, gameList]) => (
                 <div key={category} className="mb-7 text-black">
                     <h2 className="text-2xl shadow-font-semibold mb-2">{category}:</h2>
                     <div className="overflow-x-auto">
-                        <div className="flex w-max text-black gap-4">
-                            {games.map((game) => (
-                                <div key={game.name} className="w-44 bg-white border-4 border-red-900 shadow-3xl overflow-x-auto rounded-xl overflow-hidden transition flex flex-col">
+                        <div className="flex w-max text-black gap-2">
+                            {gameList.map((game) => (
+                                <div key={game.name} className="w-48 bg-white border-4 border-red-900 shadow-3xl overflow-x-auto rounded-xl overflow-hidden transition flex flex-col">
                                     <img src={game.img} alt={game.name} className="w-full border-b-4 border-red-900 h-48 object-cover" />
-                                    <div className="p-4 flex flex-col flex-grow">
+                                    <div className="p-3 flex flex-col flex-grow">
                                         <p className="flex">
                                             <h3 className="text-xl font-bold mr-2">{game.name}</h3>
-                                            <button>< Info /></button>
                                         </p>
                                         <div className="mt-4 justify-center space-x-3 flex">
                                             <a href={game.play} target="_blank" rel="noopener noreferrer" className="w-full px-4 py-1 border-2 border-gray-400 rounded-full text-center bg-gray-300 hover:bg-gray-500 hover:border-gray-400 transition block">
@@ -140,6 +145,28 @@ const BoardGames = () => {
                     </div>
                 </div>
             ))}
+            {Object.entries(future).map(([category, List]) => (
+                <div key={category} className="mb-7 text-black">
+            <h2 className="text-2xl shadow-font-semibold mb-2">{category}:</h2>
+            <div className="overflow-x-auto">
+                <div className="flex w-max text-black gap-2">
+                    {List.map((item) => (
+                        <div key={item.name} className="w-48 bg-white border-4 border-red-900 shadow-3xl overflow-x-auto rounded-xl overflow-hidden transition flex flex-col">
+                            <img src={item.img} alt={item.name} className="w-full border-b-4 border-red-900 h-48 object-cover" />
+                            <div className="p-3 flex flex-col flex-grow">
+                                <p className="flex">
+                                    <h3 className="text-xl font-bold mb-1">{item.name}</h3>
+                                </p>
+                                <p className="flex">
+                                    <h3>{item.description}</h3>
+                                </p>
+                            </div>
+                        </div>
+                    ))}
+                </div>
+            </div>
+        </div>
+    ))}
         </div>
     );
 }

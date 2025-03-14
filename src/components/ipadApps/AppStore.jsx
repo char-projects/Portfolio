@@ -13,8 +13,6 @@ const AppStore = () => {
         { title: "Three.js", info: "@0.149.0" },
     ];
 
-
-    // Separate the apps into two categories for two columns
     const languagesAndCoreTechnologies = appstore.filter(
         (app) =>
             app.title === "JavaScript" ||
@@ -35,7 +33,7 @@ const AppStore = () => {
 
     return (
         <div
-            className="bg-gradient-to-br from-[#007aff] to-[#5ac8fa] p-6 flex h-full flex-col shadow-3xl"
+            className="bg-gradient-to-br from-blue-500 via-blue-300 to-blue-200 p-6 flex h-full flex-col shadow-3xl"
         >
             <div className="header flex items-center justify-between mt-6 mb-8">
                 <h1 className="text-white text-3xl font-semibold">Tech Stack</h1>
@@ -43,7 +41,7 @@ const AppStore = () => {
                     <span className="text-blue-500 font-semibold text-lg">+</span>
                 </button>
             </div>
-            <div className="apps flex space-x-4">
+            <div className="flex space-x-4">
                 {/* Column 1: Languages & Core Technologies */}
                 <div className="column w-1/2">
                     {languagesAndCoreTechnologies.map((app, index) => (

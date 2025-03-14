@@ -143,11 +143,11 @@ const AppPage = ({ app, onClose }) => {
     return (
         <div
             ref={pageRef}
-            className="absolute shadow-lg rounded-3xl custom-overflow-y-auto bg-white"
+            className="absolute shadow-lg rounded-[26px] custom-overflow-y-auto bg-black"
             style={{
-                width: ipadWidth - 6 * padding,
-                height: ipadHeight - 6 * padding,
-                top: padding * 2.9,
+                width: ipadWidth - 5 * padding,
+                height: ipadHeight - 5 * padding,
+                top: padding * 2.5,
             }}
         >
             <button
@@ -181,76 +181,76 @@ const Ipad = () => {
             {/* iPad Background with Icons */}
             <div
                 id="ipad-container"  // ADDED THIS ID
-                className="relative w-[578px] h-[800px] rounded-[40px] overflow-hidden flex items-center justify-center"
+                className="relative w-[578px] h-[800px] rounded-[40px] overflow-hidden flex items-center justify-center shadow-2xl shadow-gray-500"
                 style={{
                     backgroundImage: "url('/src/assets/ipad.png')",
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}
             >
-                <div className="absolute top-[80px] w-full pl-[87px] pr-[118px]">
+                <div className="absolute top-[72px] w-full pl-[78px] pr-[118px]">
                     {/* Row 1 */}
-                    <div className="grid grid-cols-4 gap-24 mb-[74px]">
+                    <div className="grid grid-cols-4 gap-[110px] mb-[78px]">
                         {ipadApps.slice(0, 2).map((app) => (
                             <button
                                 key={app.index}
-                                className="w-[43px] h-[43px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
+                                className="w-[44px] h-[44px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
                                 onClick={() => handleAppClick(app)}
                             >
                             </button>
                         ))}
                     </div>
                     {/* Row 2 */}
-                    <div className="grid grid-cols-4 gap-24 mb-[73px]">
+                    <div className="grid grid-cols-4 gap-[110px] mb-[79px]">
                         {ipadApps.slice(2, 6).map((app) => (
                             <button
                                 key={app.index}
-                                className="w-[43px] h-[43px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
+                                className="w-[44px] h-[44px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
                                 onClick={() => handleAppClick(app)}
                             >
                             </button>
                         ))}
                     </div>
                     {/* Row 3 */}
-                    <div className="grid grid-cols-4 gap-24 mb-[74px]">
+                    <div className="grid grid-cols-4 gap-[110px] mb-[79px]">
                         {ipadApps.slice(6, 10).map((app) => (
                             <button
                                 key={app.index}
-                                className="w-[43px] h-[43px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
+                                className="w-[44px] h-[44px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
                                 onClick={() => handleAppClick(app)}
                             >
                             </button>
                         ))}
                     </div>
                     {/* Row 4 */}
-                    <div className="grid grid-cols-4 gap-24 mb-[74px]">
+                    <div className="grid grid-cols-4 gap-[110px] mb-[79px]">
                         {ipadApps.slice(10, 14).map((app) => (
                             <button
                                 key={app.index}
-                                className="w-[43px] h-[43px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
+                                className="w-[44px] h-[44px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
                                 onClick={() => handleAppClick(app)}
                             >
                             </button>
                         ))}
                     </div>
                     {/* Row 5 */}
-                    <div className="grid grid-cols-4 gap-24 mb-[74px]">
+                    <div className="grid grid-cols-4 gap-[110px] mb-[78px]">
                         {ipadApps.slice(14, 18).map((app) => (
                             <button
                                 key={app.index}
-                                className="w-[43px] h-[43px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
+                                className="w-[44px] h-[44px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
                                 onClick={() => handleAppClick(app)}
                             >
                             </button>
                         ))}
                     </div>
                     {/* Row 6: App Store, Terminal, Notes */}
-                    <div className="grid grid-cols-4 gap-24 mb-[74px]">
+                    <div className="grid grid-cols-4 gap-[110px] mb-[79px]">
                         <div /> {/* Empty div to shift items right */}
                         {ipadApps.slice(18, 21).map((app) => (
                             <button
                                 key={app.index}
-                                className="w-[43px] h-[43px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
+                                className="w-[44px] h-[44px] rounded-md shadow-md cursor-pointer flex items-center justify-center"
                                 onClick={() => handleAppClick(app)}
                             >
                             </button>

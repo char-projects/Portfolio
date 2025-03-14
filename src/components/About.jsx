@@ -1,7 +1,6 @@
 import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
 import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
@@ -18,9 +17,9 @@ const ServiceCard = ({ index, title, icon }) => (
     >
         <motion.div
             variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-            className="w-full bg-gradient-to-r from-gray-600 via-gray-700 to-slate-900 p-[1px] rounded-[20px] shadow-card"
+            className="w-full shadow-xl shadow-gray-500 p-[1px] rounded-[20px]"
         >
-            <div className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
+            <div className="bg-gray-900 rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col">
                 <img
                     src={icon}
                     alt="web-development"
@@ -47,7 +46,7 @@ const About = () => {
         className='mt-4 text-secondary text-[17px] max-w-5xl leading-[30px]'
       >
           <p>
-              I'm a skilled full-stack developer with experience in C, Python,
+              I'm a full-stack developer with experience in C, Python,
               and JavaScript, specializing in system programming, algorithms, and
               data structures. I have a strong foundation in Unix, shell scripting,
               and low-level programming, along with front-end development

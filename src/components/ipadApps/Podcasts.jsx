@@ -10,22 +10,27 @@ const PodcastEpisodes = [
     {
         title: "Fitness",
         description: "Learn more about this in the Health app",
-        img: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Logo_Fitness_24.png/1280px-Logo_Fitness_24.png",
+        img: "https://files.merca20.com/uploads/2024/10/Designer-8.jpeg",
     },
     {
-        title: "Travel",
+        title: "Traveling",
         description: "Learn more about this in the Google Maps app",
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/6c/Logo_of_the_International_Air_Transport_Association_%28IATA%29.svg",
+        img: "https://eurocitymalta.com/wp-content/uploads/2024/05/B08931.webp",
     },
     {
         title: "Reading",
         description: "Learn more about this in the Books app",
-        img: "https://upload.wikimedia.org/wikipedia/commons/1/1d/Book_icon_black.svg",
+        img: "https://rukminim2.flixcart.com/image/720/864/xif0q/book/0/z/z/-original-imahyywmykxb7xrz.jpeg?q=60&crop=false",
     },
     {
         title: "Coding",
         description: "Learn more about this in the GitHub app",
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/69/Java_logo.png",
+        img: "https://a-static.mlcdn.com.br/450x450/laptop-infantil-barbie-dream-30-atividades-candide/magazineluiza/183737200/d0ce723e595421e5620e4a217949ba64.jpg",
+    },
+    {
+        title: "Languages",
+        description: "Learn more about this in the Duolingo app",
+        img: "https://i.ytimg.com/vi/uvvejQXwdT0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWZijoahhGNvkcVtq6P5NPi6cuJQ",
     },
 ];
 
@@ -33,13 +38,13 @@ const Podcasts = () => {
     return (
         <div className="min-h-full bg-gradient-to-b from-[#1A1A1A] to-[#2C2C2C] text-white font-sans flex flex-col items-center py-6">
             {/* Header */}
-            <div className="text-center text-4xl font-semibold mb-8">Podcasts</div>
+            <div className="text-center text-4xl font-semibold mb-8">Hobbies</div>
 
             {/* Episode List */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 w-full max-w-6xl px-6">
+            <div className="grid grid-cols-2 gap-8 w-full max-w-6xl px-6">
                 {PodcastEpisodes.map((episode, index) => (
                     <div key={index} className="bg-gradient-to-b from-[#3E3E3E] to-[#212121] rounded-2xl overflow-hidden shadow-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
-                        <img src={episode.img} alt={episode.title} className="w-full h-40 object-cover rounded-t-2xl" />
+                        <img src={episode.img} alt={episode.title} className="w-full h-40 object-cover rounded-t-2xl bg-white" />
                         <div className="p-6">
                             <h3 className="text-xl font-semibold mb-2">{episode.title}</h3>
                             <p className="text-sm text-gray-400 mb-4">{episode.description}</p>

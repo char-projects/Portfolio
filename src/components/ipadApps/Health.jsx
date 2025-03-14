@@ -4,17 +4,17 @@ import { dancing, dumbbell, padel, surfing, skis, iceskates } from "../../assets
 const SportsHobbies = [
     {
         title: "Gym",
-        description: "A consistent gym routine helps me stay fit and strong. I enjoy weightlifting, running, and swimming.",
+        description: "The gym helps me stay fit and strong. I enjoy weightlifting, Calisthenics, running and swimming.",
         img: dumbbell,
     },
     {
         title: "Ballroom Dancing",
-        description: "Ballroom dancing combines elegance and discipline. I enjoy the artistry and rhthym.",
+        description: "I love the elegance and discipline of ballroom dancing. And obviously the ball gowns.",
         img: dancing,
     },
     {
         title: "Pádel",
-        description: "Pádel is a fun and social sport. The fast pace and teamwork make it a great way to stay active.",
+        description: "Pádel is a fun sport that I learned in Spain. Like rock climbing and tennis, it's a great weekend activity.",
         img: padel,
     },
 ];
@@ -22,17 +22,17 @@ const SportsHobbies = [
 const SeasonalSports = [
     {
         title: "Skiing",
-        description: "Skiing is a thrilling winter sport. The speed and adrenaline rush make it a favorite winter activity.",
+        description: "The speed and adrenaline rush of snowboarding and skiing make them my favorite winter sports.",
         img: skis,
     },
     {
         title: "Surfing",
-        description: "Surfing is an exhilarating sport. Catching waves and being in the ocean is a great experience.",
+        description: "Catching waves and being in the ocean is beyond comparison. My favorite spots were California & Portugal.",
         img: surfing,
     },
     {
         title: "Ice Skating",
-        description: "Ice skating is a fun winter sport. I enjoy the balance and precision it requires.",
+        description: "I enjoy skating in summer and ice skating in winter. Bonus points if it's on a lake.",
         img: iceskates,
     },
 ];
@@ -95,9 +95,9 @@ const Health = () => {
                 </div>
             </div>
             {/* Favorite Recipes Section */}
-            <div className="space-y-8">
+            <div className="space-y-5">
                 <h2 className="text-2xl font-semibold mb-6">Favorite Recipes</h2>
-                <div className="space-y-8">
+                <div className="space-y-5">
                     {FavoriteRecipes.map((recipe, index) => (
                         <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden p-6">
                             <div className="flex items-center space-x-4">

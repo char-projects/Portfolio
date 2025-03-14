@@ -92,7 +92,7 @@ const GoogleMaps = () => {
             <h1 className="text-3xl font-bold text-center mt-16">My Favorite Places</h1>
 
             {/* Travel Cards */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <div className="grid grid-cols-2 gap-6 mt-6">
                 {travelSpots.map((spot) => (
                     <div
                         key={spot.id}

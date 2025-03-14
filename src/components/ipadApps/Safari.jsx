@@ -1,83 +1,53 @@
-import React, { useState } from "react";
+import React from "react";
+import { FaChevronLeft, FaChevronRight, FaRedo, FaSearch } from "react-icons/fa";
 
 const Safari = () => {
-    const websites = [
-        { title: "React Documentation", url: "https://reactjs.org/docs/getting-started.html" },
-        { title: "MDN Web Docs", url: "https://developer.mozilla.org/en-US/" },
-        { title: "CSS Tricks", url: "https://css-tricks.com/" },
-        { title: "Smashing Magazine", url: "https://www.smashingmagazine.com/" },
-        { title: "FreeCodeCamp", url: "https://www.freecodecamp.org/" },
-        { title: "A List Apart", url: "https://alistapart.com/" },
-        { title: "Dev.to", url: "https://dev.to/" },
-        { title: "CSS Layout", url: "https://csslayout.io/" },
+    const tabs = [
+        { title: "Harvard", url: "https://www.edx.org/school/harvardx", icon: "🌐" },
+        { title: "Reddit", url: "https://www.reddit.com/r/Catswithjobs/", icon: "🐈‍⬛" },
+        { title: "Stack Overflow", url: "https://stackoverflow.com", icon: "💬" },
+        { title: "Deep Sea", url: "https://neal.fun/deep-sea/", icon: "📚" },
+        { title: "FreeCodeCamp", url: "https://www.freecodecamp.org", icon: "🚀" },
+        { title: "GeoGuessr", url: "https://www.geoguessr.com/", icon: "🖥️" },
+        { title: "LeetCode", url: "https://www.leetcode.com/", icon: "🧠" },
     ];
 
-    const [activeTab, setActiveTab] = useState(0);
-    const [searchQuery, setSearchQuery] = useState("");
-
     return (
-        <div className="safari-container bg-gray-50 p-4 h-full shadow-xl">
-            {/* Safari Header */}
-            <div className="safari-header flex items-center justify-between bg-white p-2 rounded-lg shadow-md mb-4">
-                <div className="nav-buttons flex items-center space-x-4">
-                    <button className="bg-gray-200 rounded-full p-2">
-                        <span className="text-gray-800 text-xl">←</span>
-                    </button>
-                    <button className="bg-gray-200 rounded-full p-2">
-                        <span className="text-gray-800 text-xl">→</span>
-                    </button>
+        <div className="w-full h-full bg-gray-100 flex flex-col">
+            {/* Top Bar */}
+            <div className="bg-gray-200 p-3 flex items-center justify-between shadow-md">
+                <div className="flex items-center space-x-4 px-2">
+                    <FaChevronLeft className="text-gray-600 text-lg" />
+                    <FaChevronRight className="text-gray-400 text-lg" />
+                    <FaRedo className="text-gray-600 text-lg" />
                 </div>
-                <input
-                    type="text"
-                    className="search-bar bg-transparent border-none text-lg text-gray-800 w-full mx-4 placeholder-gray-500"
-                    placeholder="Search or type URL"
-                    value={searchQuery}
-                    onChange={(e) => setSearchQuery(e.target.value)}
-                />
+                <div className="flex-grow mx-4 relative">
+                    <input
+                        type="text"
+                        placeholder="Search or enter website name"
+                        className="w-full px-10 py-1.5 bg-white border rounded-full shadow-sm text-center text-gray-800"
+                    />
+                    <FaSearch className="absolute left-3 top-2.5 text-gray-500" />
+                </div>
+                <div className="w-6"></div> {/* Spacer */}
             </div>
 
-            {/* Tabs Section */}
-            <div className="tabs-container mb-4">
-                <div className="tabs flex space-x-4 overflow-x-auto">
-                    {websites.map((website, index) => (
+            {/* Content Area */}
+            <div className="flex-1 flex flex-col items-center justify-start px-4 py-7">
+                <h2 className="text-xl text-gray-700 mb-5">7 Tabs</h2>
+                <div className="w-full space-y-3">
+                    {tabs.map((tab, index) => (
                         <div
                             key={index}
-                            className={`tab py-2 px-4 cursor-pointer rounded-full transition-all duration-300 ${
-                                activeTab === index
-                                    ? "bg-blue-600 text-white shadow-md"
-                                    : "bg-gray-200 text-gray-800"
-                            }`}
-                            onClick={() => setActiveTab(index)}
+                            className="flex items-center justify-between p-3 bg-white shadow-md rounded-lg hover:bg-gray-50 cursor-pointer"
                         >
-                            {website.title}
+                            <span className="text-gray-700 text-lg">{tab.icon} {tab.title}</span>
+                            <a href={tab.url} target="_blank" rel="noopener noreferrer" className="text-blue-500">
+                                {tab.url}
+                            </a>
                         </div>
                     ))}
                 </div>
-            </div>
-
-            {/* Content Section */}
-            <div className="content bg-white rounded-lg p-4 shadow-lg overflow-auto flex-grow">
-                <h2 className="text-2xl font-semibold text-gray-800">{websites[activeTab].title}</h2>
-                <p className="text-gray-600 mt-2">
-                    <a
-                        href={websites[activeTab].url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                    >
-                        {websites[activeTab].url}
-                    </a>
-                </p>
-            </div>
-
-            {/* Footer with "New Tab" Button */}
-            <div className="footer flex justify-center items-center mt-4">
-                <button
-                    className="bg-blue-500 text-white py-2 px-6 rounded-full font-semibold transition-all duration-200 hover:bg-blue-600"
-                    onClick={() => alert("New tab opened!")}
-                >
-                    New Tab
-                </button>
             </div>
         </div>
     );

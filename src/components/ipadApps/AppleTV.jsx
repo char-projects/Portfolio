@@ -1,94 +1,103 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const movieData = [
     {
-        title: "The Matrix",
-        description: "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-        img: "https://m.media-amazon.com/images/I/51oJ-w0A1RL._AC_SY679_.jpg", // Replace with movie poster
-        genre: "Action",
-        link: "https://www.apple.com/tv/",
-        type: "movie",  // Movie
+        title: "Game of Thrones",
+        description: "Trouble is brewing in Westeros. For the inhabitants of this world, control of the Iron Throne holds the lure of great power. But in a land where seasons can last a lifetime, winter is coming...and beyond the Great Wall that protects them, a forgotten evil has returned.",
+        img: "/src/assets/ipad/GOT.jpg",
+        genre: "Fantasy - 2011",
+        type: "recommended",
     },
     {
-        title: "Inception",
-        description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.",
-        img: "https://m.media-amazon.com/images/I/51-oLg2j44L._AC_.jpg", // Replace with movie poster
-        genre: "Sci-Fi",
-        link: "https://www.apple.com/tv/",
-        type: "movie",  // Movie
+        title: "House of Cards",
+        description: "Betrayed by the White House, Congressman Frank Underwood embarks on a ruthless rise to power. Blackmail, seduction and ambition are his weapons.",
+        img: "/src/assets/ipad/HouseOfCards.jpg",
+        genre: "Drama - 2013",
+        type: "recommended",
     },
     {
-        title: "Stranger Things",
-        description: "When a young boy disappears, his friends, family, and the local sheriff must uncover the supernatural mysteries surrounding his disappearance.",
-        img: "https://m.media-amazon.com/images/I/71F1HWLu6DL._AC_SY679_.jpg", // Replace with movie poster
-        genre: "Thriller",
-        link: "https://www.apple.com/tv/",
-        type: "tvshow",  // TV Show
+        title: "Behind her eyes",
+        description: "A single mother enters a world of twisted mind games when she begins an affair with her psychiatrist boss while secretly befriending his mysterious wife.",
+        img: "/src/assets/ipad/BehindHerEyes.jpg",
+        genre: "Thriller - 2021",
+        type: "recommended",
     },
     {
-        title: "The Crown",
-        description: "The story of the reign of Queen Elizabeth II, from the 1950s to present day, covering major events in the British monarchy and political world.",
-        img: "https://m.media-amazon.com/images/I/61ekNnoHnAL._AC_SY679_.jpg", // Replace with movie poster
-        genre: "Drama",
-        link: "https://www.apple.com/tv/",
-        type: "tvshow",  // TV Show
+        title: "Prison Break",
+        description: "When his brother is wrongly convicted of murder, a structural engineer resolves to bust his brother out of the notorious Fox River State Penitentiary.",
+        img: "/src/assets/ipad/PrisonBreak.jpg",
+        genre: "Drama - 2005",
+        type: "recommended",
     },
     {
-        title: "Breaking Bad",
-        description: "A high school chemistry teacher turned methamphetamine manufacturer faces a dark and twisted descent into the criminal underworld.",
-        img: "https://m.media-amazon.com/images/I/71BB7dMhtAL._AC_SY679_.jpg", // Replace with movie poster
-        genre: "Crime",
-        link: "https://www.apple.com/tv/",
-        type: "tvshow",  // TV Show
-    },
-];
-
-const watchlistData = [
-    {
-        title: "The Witcher",
-        description: "A monster hunter struggles to find his place in a world full of political intrigue and dangerous creatures.",
-        img: "https://m.media-amazon.com/images/I/91r2FCM2iqL._AC_SY679_.jpg",
-        genre: "Fantasy",
-        link: "https://www.apple.com/tv/",
-        type: "tvshow",  // TV Show
+        title: "Modern Family",
+        description: "Modern Family is a comedy series that views three different families through the lens of a documentary filmmaker and his crew. Jay Pritchett is the patriarch of this complicated, messy, and loving modern family.",
+        img: "/src/assets/ipad/ModernFamily.jpg",
+        genre: "Comedy - 2009",
+        type: "sitcom",
     },
     {
-        title: "Interstellar",
-        description: "A team of explorers travel through a wormhole in space in an attempt to ensure humanity's survival.",
-        img: "https://m.media-amazon.com/images/I/91zzWGJvPbL._AC_SY679_.jpg",
-        genre: "Sci-Fi",
-        link: "https://www.apple.com/tv/",
-        type: "movie",  // Movie
-    }
+        title: "The Big Bang Theory",
+        description: "Leonard and Sheldon are brilliant physicists – geniuses in the laboratory but socially challenged everywhere else. Enter beautiful, street-smart neighbor Penny, who aims to teach them a thing or two about life.",
+        img: "/src/assets/ipad/TBBT.jpg",
+        genre: "Comedy - 2007",
+        type: "sitcom",
+    },
+    {
+        title: "The Office",
+        description: "Led by the comically incompetent Michael Scott, employees plod along at Dunder Mifflin's Scranton-based paper supply branch, where foibles, feuds and office romances unfold through the lens of an ever-present documentary crew.",
+        img: "/src/assets/ipad/TheOffice.jpg",
+        genre: "Comedy - 2005",
+        type: "sitcom",
+    },
+    {
+        title: "Friends",
+        description: "Three young men and three young women - of the BFF kind - live in the same apartment complex and face life and love in New York.",
+        img: "/src/assets/ipad/Friends.jpg",
+        genre: "Comedy - 1994",
+        type: "sitcom",
+    },
+    {
+        title: "Gilmore Girls",
+        description: "In Stars Hollow, Connecticut, we meet 32-year-old Lorelai Gilmore and her teenage daughter, Rory. When Rory's attention turns from dreams of Harvard to boys and self-reliance, Lorelai notices more of her own rebellious youth in Rory.",
+        img: "/src/assets/ipad/GilmoreGirls.jpg",
+        genre: "Comedy - 2000",
+        type: "sitcom",
+    },
+    {
+        title: "How I met your mother",
+        description: "Ted's epic search for his soul mate is told largely through flashbacks, as an adult Ted recounts to his kids how he met their mother.\n",
+        img: "/src/assets/ipad/Himym.jpg",
+        genre: "Comedy - 2005",
+        type: "sitcom",
+    },
 ];
 
 const continueWatchingData = [
     {
-        title: "The Mandalorian",
-        description: "The travels of a lone bounty hunter in the outer reaches of the galaxy, far from the authority of the New Republic.",
-        img: "https://m.media-amazon.com/images/I/91nxbpxuAeL._AC_SY679_.jpg",
-        genre: "Action",
-        link: "https://www.apple.com/tv/",
-        type: "tvshow",  // TV Show
+        title: "La isla de las tentaciones",
+        description: "Cinco parejas ponen a prueba su relación conviviendo por separado en unas lujosas villas con un grupo de solteros/as en busca del amor. ¿Serán capaces de resistir a la tentación?",
+        img: "/src/assets/ipad/LaIsla.jpg",
+        genre: "Reality - 2025",
+        type: "tvshow",
     },
     {
         title: "Black Mirror",
         description: "An anthology series that explores a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
-        img: "https://m.media-amazon.com/images/I/81X6EFQ8+5L._AC_SY679_.jpg",
-        genre: "Sci-Fi",
-        link: "https://www.apple.com/tv/",
-        type: "tvshow",  // TV Show
+        img: "/src/assets/ipad/BlackMirror.jpg",
+        genre: "Sci-Fi - 2011",
+        type: "tvshow",
     }
 ];
 
-// FIX WEIRDGAP AT THE TOP
-
 const AppleTV = () => {
-    const movies = movieData.filter(item => item.type === "movie");
-    const tvShows = movieData.filter(item => item.type === "tvshow");
-
-    const watchlist = watchlistData.filter(item => item.type === "movie" || item.type === "tvshow");
+    const recommended = movieData.filter(item => item.type === "recommended");
+    const sitcom = movieData.filter(item => item.type === "sitcom");
     const continueWatching = continueWatchingData.filter(item => item.type === "movie" || item.type === "tvshow");
+    const [selectedShow, setSelectedShow] = useState(null);
+    const handleClick = (title) => {
+        setSelectedShow(selectedShow === title ? null : title);
+    };
 
     return (
         <div className="bg-black text-white font-sans pt-12">
@@ -122,62 +131,125 @@ const AppleTV = () => {
 
             {/* Main Content */}
             <div className="px-6 py-4 space-y-12">
-                {/* Section 1 - Recommended for You */}
-                <div className="space-y-4">
+                {/* Recommended for You */}
+                <div className="space-y-4 mt-4">
                     <h2 className="text-2xl font-semibold">Recommended for You</h2>
-                    <div className="flex overflow-x-scroll space-x-6">
-                        {movies.map((movie, index) => (
-                            <a href={movie.link} key={index} className="relative w-48 h-72 rounded-lg overflow-hidden cursor-pointer">
-                                <img
-                                    src={movie.img}
-                                    alt={movie.title}
-                                    className="w-full h-full object-cover rounded-lg"
-                                />
-                                <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 className="text-lg font-semibold">{movie.title}</h3>
-                                    <p className="text-sm">{movie.genre}</p>
-                                </div>
-                            </a>
+                    <div className="flex overflow-x-scroll max-w-full whitespace-nowrap space-x-4">
+                        {recommended.map((show) => (
+                            <div
+                                key={show.title}
+                                className="relative w-44 h-64 rounded-lg cursor-pointer flex-shrink-0 bg-gray-800"
+                                onClick={() => handleClick(show.title)}
+                            >
+                                {selectedShow === show.title ? (
+                                    <div className="w-full h-full flex flex-col justify-center items-center text-center">
+                                        <button
+                                            className="absolute top-2 right-2 text-xl"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setSelectedShow(null);
+                                            }}
+                                        >
+                                            ✕
+                                        </button>
+                                        <p className="text-sm text-center whitespace-pre-wrap">{show.description}</p>
+                                    </div>
+                                ) : (
+                                    <>
+                                    <img
+                                        src={show.img}
+                                        alt={show.title}
+                                        className="w-full h-full object-cover rounded-lg"
+                                    />
+                                    <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+                                        <h3 className="text-lg font-semibold">{show.title}</h3>
+                                        <p className="text-sm">{show.genre}</p>
+                                    </div>
+                                    </>
+                                )}
+                            </div>
                         ))}
                     </div>
                 </div>
 
-                {/* Section 2 - Continue Watching */}
+                {/* Sitcoms */}
+                <div className="space-y-4">
+                    <h2 className="text-2xl font-semibold">Sitcoms</h2>
+                    <div className="flex overflow-x-scroll max-w-full space-x-4">
+                        {sitcom.map((sitcom, index) => (
+                            <div
+                                key={sitcom.title}
+                                className="relative w-44 h-64 rounded-lg cursor-pointer flex-shrink-0 bg-gray-800"
+                                onClick={() => handleClick(sitcom.title)}
+                            >
+                                {selectedShow === sitcom.title ? (
+                                    <div className="w-full h-full flex flex-col justify-center items-center text-center">
+                                        <button
+                                            className="absolute top-2 right-2 text-xl"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setSelectedShow(null);
+                                            }}
+                                        >
+                                            ✕
+                                        </button>
+                                        <p className="text-sm text-center whitespace-pre-wrap">{sitcom.description}</p>
+                                    </div>
+                                ) : (
+                                    <>
+                                        <img
+                                            src={sitcom.img}
+                                            alt={sitcom.title}
+                                            className="w-full h-full object-cover rounded-lg"
+                                        />
+                                        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+                                            <h3 className="text-lg font-semibold">{sitcom.title}</h3>
+                                            <p className="text-sm">{sitcom.genre}</p>
+                                        </div>
+                                    </>
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
+                {/* Continue Watching */}
                 <div className="space-y-4">
                     <h2 className="text-2xl font-semibold">Continue Watching</h2>
-                    <div className="flex overflow-x-scroll space-x-6">
-                        {continueWatching.map((item, index) => (
-                            <a href={item.link} key={index} className="relative w-48 h-72 rounded-lg overflow-hidden cursor-pointer">
-                                <img
-                                    src={item.img}
-                                    alt={item.title}
-                                    className="w-full h-full object-cover rounded-lg"
-                                />
-                                <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 className="text-lg font-semibold">{item.title}</h3>
-                                    <p className="text-sm">{item.genre}</p>
-                                </div>
-                            </a>
-                        ))}
-                    </div>
-                </div>
-
-                {/* Section 3 - Watchlist */}
-                <div className="space-y-4">
-                    <h2 className="text-2xl font-semibold">Watchlist</h2>
-                    <div className="flex overflow-x-scroll space-x-6">
-                        {watchlist.map((item, index) => (
-                            <a href={item.link} key={index} className="relative w-48 h-72 rounded-lg overflow-hidden cursor-pointer">
-                                <img
-                                    src={item.img}
-                                    alt={item.title}
-                                    className="w-full h-full object-cover rounded-lg"
-                                />
-                                <div className="absolute bottom-0 left-0 bg-gradient-to-t from-black to-transparent p-4">
-                                    <h3 className="text-lg font-semibold">{item.title}</h3>
-                                    <p className="text-sm">{item.genre}</p>
-                                </div>
-                            </a>
+                    <div className="flex space-x-6">
+                        {continueWatching.map((item) => (
+                            <div
+                                key={item.title}
+                                className="relative w-44 h-64 rounded-lg cursor-pointer flex-shrink-0 bg-gray-800"
+                                onClick={() => handleClick(item.title)}
+                            >
+                                {selectedShow === item.title ? (
+                                    <div className="w-full h-full flex flex-col justify-center items-center text-center">
+                                        <button
+                                            className="absolute top-2 right-2 text-xl"
+                                            onClick={(e) => {
+                                                e.stopPropagation();
+                                                setSelectedShow(null);
+                                            }}
+                                        >
+                                            ✕
+                                        </button>
+                                        <p className="text-sm text-center whitespace-pre-wrap">{item.description}</p>
+                                    </div>
+                                ) : (
+                                    <>
+                                        <img
+                                            src={item.img}
+                                            alt={item.title}
+                                            className="w-full h-full object-cover rounded-lg"
+                                        />
+                                        <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black to-transparent p-4">
+                                            <h3 className="text-lg font-semibold">{item.title}</h3>
+                                            <p className="text-sm">{item.genre}</p>
+                                        </div>
+                                    </>
+                                )}
+                            </div>
                         ))}
                     </div>
                 </div>

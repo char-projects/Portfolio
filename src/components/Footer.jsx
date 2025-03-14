@@ -19,7 +19,7 @@ const Footer = () => {
                     {new Date().getFullYear()} &copy; Created by Charlotte. All rights reserved.
                 </p>
             </div>
-            <div className="w-full h-auto flex justify-center bg-gradient-to-r from-pink-500 via-purple-500 to-red-500 bg-clip-text text-transparent font-bold self-start text-2xl">
+            <div className="w-full h-auto flex justify-center bg-fuchsia-300 bg-clip-text text-transparent font-bold self-start text-2xl">
                 <Typewriter
                     text={[
                         "Thanks for visiting!",

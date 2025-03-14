@@ -1,11 +1,10 @@
-import { Ipad, BallCanvas, ComputersCanvas, Tiles, StarsCanvas } from './canvas';
+import { Ipad, BallCanvas, ComputersCanvas, StarsCanvas } from './canvas';
 import Hero from "./Hero";
 import Navbar from "./Navbar";
 import About from "./About";
 import Tech from "./Tech";
 import Experience from "./Experience";
 import Works from "./Works";
-import Hackathons from "./Hackathons";
 import Contact from "./Contact";
 import CanvasLoader from "./Loader";
 import Footer from "./Footer";
@@ -19,14 +18,12 @@ export {
   Tech,
   Experience,
   Works,
-  Hackathons,
   Languages,
   Contact,
   Footer,
   CanvasLoader,
   Ipad,
-  BallCanvas, 
+  BallCanvas,
   ComputersCanvas,
-  Tiles,
   StarsCanvas
 };

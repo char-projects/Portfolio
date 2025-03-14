@@ -7,7 +7,7 @@ import Files from "./Files.jsx";
 import FindMy from "./FindMy.jsx";
 import GoogleMaps from "./GoogleMaps.jsx";
 import Health from "./Health.jsx";
-import Messages from "./Messages.jsx";
+import Messages from "./Hackathon.jsx";
 import Music from "./Music.jsx";
 import Notes from "./Notes.jsx";
 import Pinterest from "./Pinterest.jsx";

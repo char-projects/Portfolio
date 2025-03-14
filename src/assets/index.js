@@ -39,6 +39,10 @@ import padel from "./ipad/padel.png";
 import iceskates from "./ipad/ice-skates.png";
 import skis from "./ipad/skis.png";
 import surfing from "./ipad/surf-board.png";
+import applemusic from "./ipad/applemusic.png";
+import olympus from "./ipad/olympus.png";
+import noteslist from "./ipad/Notes_List.png";
+import notestable from "./ipad/Notes_Table.png";
 
 export {
   logo,
@@ -82,4 +86,8 @@ export {
   iceskates,
   skis,
   surfing,
+  applemusic,
+  olympus,
+  noteslist,
+  notestable,
 };

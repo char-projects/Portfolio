@@ -2,49 +2,61 @@ import React from 'react';
 
 const videoData = [
     {
-        title: "Why Coding is the Future",
-        description: "A deep dive into the future of programming and tech careers. Discover the skills that will dominate the next decade.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/a/a2/Black_Programming_Icon.svg", // Replace with relevant image
-        channel: "TechTube",
-        views: "3K views",
-        time: "12:45",
-        link: "https://www.youtube.com/",
+        title: "\"Hello, World\" in 5 CURSED languages\n",
+        img: "https://i.ytimg.com/vi/ehbSTazdhbU/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAavpZWmiDbq6oh53_u8MFTwXVajA",
+        channel: "Dreams of Code",
+        views: "561K views",
+        time: "13:06",
+        link: "https://youtu.be/ehbSTazdhbU?si=487xcKoPssiQEw3q",
     },
     {
-        title: "Understanding Artificial Intelligence",
-        description: "A simplified explanation of AI, how it works, and its applications in real-world scenarios.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/6/67/Artificial_Intelligence_icon.svg", // Replace with relevant image
-        channel: "AIExplained",
-        views: "2K views",
-        time: "10:30",
-        link: "https://www.youtube.com/",
+        title: "A Sudoku Secret To Blow Your Mind",
+        img: "https://i.ytimg.com/vi/pezlnN4X52g/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDeHzXKqfsOM9bHzcR_93oVQC02pA",
+        channel: "Numberphile",
+        views: "2.4M views",
+        time: "6:07",
+        link: "https://youtu.be/pezlnN4X52g?si=KVeS1Jv4Tw4YYbc1",
+        // https://www.youtube.com/watch?v=VLOKMjHEyhY
     },
     {
-        title: "My Favorite Coding Resources",
-        description: "A list of websites, books, and tools that have helped me as a programmer. Useful for beginners and experts alike.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/3/36/Code_icon.svg", // Replace with relevant image
-        channel: "DevResources",
-        views: "1.5K views",
-        time: "8:20",
-        link: "https://www.youtube.com/",
+        title: "Machine Learning Explained in 100 Seconds",
+        img: "https://i.ytimg.com/vi/PeMlggyqz0Y/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAazMKUc5M6zEggGTxLBkR4hoCB0Q",
+        channel: "Fireship",
+        views: "742K views",
+        time: "2:34",
+        link: "https://youtu.be/PeMlggyqz0Y?si=-_FNaXaEOCTya7h3",
     },
     {
-        title: "The Secrets of the Universe Explained",
-        description: "A fascinating exploration into the universe, from black holes to quantum physics, in a way that's easy to understand.",
-        img: "https://upload.wikimedia.org/wikipedia/commons/4/42/Space_Icon.svg", // Replace with relevant image
-        channel: "SpaceTime",
-        views: "10K views",
-        time: "14:10",
-        link: "https://www.youtube.com/",
+        title: "How to find a job as a software developer",
+        img: "https://i.ytimg.com/vi/hW5s_UUO1RI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBfC21IAueYHBot9G8TSmfWkrdrAg",
+        channel: "ThePrimeagen",
+        views: "362K views",
+        time: "5:09",
+        link: "https://youtu.be/dQw4w9WgXcQ?si=hm-VvApDTRuwjShK",
     },
     {
-        title: "Top 10 Interesting Facts about History",
-        description: "An exciting compilation of lesser-known facts from history that will blow your mind!",
-        img: "https://upload.wikimedia.org/wikipedia/commons/4/43/Historical_Paper_Icon.svg", // Replace with relevant image
-        channel: "HistoryTalks",
-        views: "2.8K views",
-        time: "6:00",
-        link: "https://www.youtube.com/",
+        title: "How Does Perlin Noise Work?",
+        img: "https://i.ytimg.com/vi/9B89kwHvTN4/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCX28BqQVBaEd5jXFzjpOKzOucxTw",
+        channel: "Doggo's Science 2",
+        views: "3.7K views",
+        time: "4:28",
+        link: "https://youtu.be/9B89kwHvTN4?si=UM6wUrGX_IlWNOCL",
+    },
+    {
+        title: "Fire Tornado Explained",
+        img: "https://i.ytimg.com/vi/vJVertGZJUM/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBCzkSQaD2Npgp1rYBa4pGaPtYnLA",
+        channel: "Discovery",
+        views: "239K views",
+        time: "1:29",
+        link: "https://youtu.be/vJVertGZJUM?si=dqEB5Z21AVutUs75",
+    },
+    {
+        title: "Potter Puppet Pals: The Mysterious Ticking Noise",
+        img: "https://i.ytimg.com/vi/Tx1XIm6q4r4/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AHmAoAC8AGKAgwIABABGGUgZShlMA8=&rs=AOn4CLC232o3Aa3EWZAgGMzhBopDFCmC9A",
+        channel: "Neil Cicierega",
+        views: "207M views",
+        time: "2:06",
+        link: "https://youtu.be/Tx1XIm6q4r4?si=QgTMYygoVICpNGtQ",
     },
 ];
 
@@ -56,21 +68,21 @@ const YouTube = () => {
                 <img
                     src="/src/assets/ipad/youtube.png"
                     alt="YouTube Logo"
-                    className="w-20 h-auto"
+                    className="w-24 h-auto"
                 />
                 <input
                     type="text"
                     placeholder="Search"
-                    className="w-3/4 bg-gray-800 text-white py-2 px-4 rounded-full focus:outline-none"
+                    className="w-3/4 border border-gray-500 text-gray-500 py-2 px-4 rounded-full focus:outline-none"
                 />
             </div>
 
             {/* Video Feed */}
-            <div className="p-6 space-y-8">
+            <div className="px-5 py-3 space-y-6">
                 {videoData.map((video, index) => (
                     <div
                         key={index}
-                        className="flex space-x-4 bg-gray-900 rounded-lg cursor-pointer mb-4"
+                        className="flex space-x-4 cursor-pointer mb-4"
                     >
                         {/* Video Thumbnail */}
                         <a href={video.link} target="_blank" rel="noopener noreferrer">
@@ -78,10 +90,10 @@ const YouTube = () => {
                                 <img
                                     src={video.img}
                                     alt={video.title}
-                                    className="w-full h-full object-cover rounded-lg"
+                                    className="w-full h-auto object-cover rounded-lg"
                                 />
-                                <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-3xl font-bold">
-                                    ▶️
+                                <div className="absolute bottom-2 right-2 bg-black bg-opacity-60 px-2 py-1 rounded-md">
+                                    <p className="text-white text-xs">{video.time}</p>
                                 </div>
                             </div>
                         </a>
@@ -92,11 +104,8 @@ const YouTube = () => {
                                 <h3 className="text-lg font-semibold text-white">{video.title}</h3>
                             </a>
                             <p className="text-sm text-gray-400">{video.description}</p>
-                            <div className="flex items-center text-gray-500 text-sm mt-2">
-                                <p className="mr-4">{video.channel}</p>
-                                <p className="mr-4">{video.views}</p>
-                                <p>{video.time}</p>
-                            </div>
+                            <p className="mr-4 text-gray-500 mt-1 text-sm">{video.views}</p>
+                            <p className="mt-2 text-gray-300 text-[13px]">{video.channel}</p>
                         </div>
                     </div>
                 ))}

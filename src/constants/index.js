@@ -202,15 +202,12 @@ const projects = [
     tags: [
       {
         name: "mlx-42",
-        color: "blue-text-gradient",
       },
       {
         name: "rendering",
-        color: "green-text-gradient",
       },
       {
         name: "c",
-        color: "pink-text-gradient",
       },
     ],
     image: fractol,
@@ -219,19 +216,16 @@ const projects = [
   {
     name: "minishell",
     description:
-      "A simple command prompt shell, basically my own little bash/zsh",
+        "A minimalist shell project replicating basic Unix command line features like execution, pipes, and redirection",
     tags: [
       {
         name: "posix",
-        color: "blue-text-gradient",
       },
       {
         name: "unix",
-        color: "green-text-gradient",
       },
       {
         name: "c",
-        color: "pink-text-gradient",
       },
     ],
     image: minishell,
@@ -244,15 +238,12 @@ const projects = [
     tags: [
       {
         name: "dsa",
-        color: "blue-text-gradient",
       },
       {
         name: "optimization",
-        color: "green-text-gradient",
       },
       {
         name: "c",
-        color: "pink-text-gradient",
       },
     ],
     image: pushswap,
