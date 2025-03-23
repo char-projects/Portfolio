@@ -4,70 +4,70 @@ const movieData = [
     {
         title: "Game of Thrones",
         description: "Trouble is brewing in Westeros. For the inhabitants of this world, control of the Iron Throne holds the lure of great power. But in a land where seasons can last a lifetime, winter is coming...and beyond the Great Wall that protects them, a forgotten evil has returned.",
-        img: "/src/assets/ipad/GOT.jpg",
+        img: "/src/assets/ipad/AppleTVPics/GOT.jpg",
         genre: "Fantasy - 2011",
         type: "recommended",
     },
     {
         title: "House of Cards",
         description: "Betrayed by the White House, Congressman Frank Underwood embarks on a ruthless rise to power. Blackmail, seduction and ambition are his weapons.",
-        img: "/src/assets/ipad/HouseOfCards.jpg",
+        img: "/src/assets/ipad/AppleTVPics/HouseOfCards.jpg",
         genre: "Drama - 2013",
         type: "recommended",
     },
     {
         title: "Behind her eyes",
         description: "A single mother enters a world of twisted mind games when she begins an affair with her psychiatrist boss while secretly befriending his mysterious wife.",
-        img: "/src/assets/ipad/BehindHerEyes.jpg",
+        img: "/src/assets/ipad/AppleTVPics/BehindHerEyes.jpg",
         genre: "Thriller - 2021",
         type: "recommended",
     },
     {
         title: "Prison Break",
         description: "When his brother is wrongly convicted of murder, a structural engineer resolves to bust his brother out of the notorious Fox River State Penitentiary.",
-        img: "/src/assets/ipad/PrisonBreak.jpg",
+        img: "/src/assets/ipad/AppleTVPics/PrisonBreak.jpg",
         genre: "Drama - 2005",
         type: "recommended",
     },
     {
         title: "Modern Family",
         description: "Modern Family is a comedy series that views three different families through the lens of a documentary filmmaker and his crew. Jay Pritchett is the patriarch of this complicated, messy, and loving modern family.",
-        img: "/src/assets/ipad/ModernFamily.jpg",
+        img: "/src/assets/ipad/AppleTVPics/ModernFamily.jpg",
         genre: "Comedy - 2009",
         type: "sitcom",
     },
     {
         title: "The Big Bang Theory",
         description: "Leonard and Sheldon are brilliant physicists – geniuses in the laboratory but socially challenged everywhere else. Enter beautiful, street-smart neighbor Penny, who aims to teach them a thing or two about life.",
-        img: "/src/assets/ipad/TBBT.jpg",
+        img: "/src/assets/ipad/AppleTVPics/TBBT.jpg",
         genre: "Comedy - 2007",
         type: "sitcom",
     },
     {
         title: "The Office",
         description: "Led by the comically incompetent Michael Scott, employees plod along at Dunder Mifflin's Scranton-based paper supply branch, where foibles, feuds and office romances unfold through the lens of an ever-present documentary crew.",
-        img: "/src/assets/ipad/TheOffice.jpg",
+        img: "/src/assets/ipad/AppleTVPics/TheOffice.jpg",
         genre: "Comedy - 2005",
         type: "sitcom",
     },
     {
         title: "Friends",
         description: "Three young men and three young women - of the BFF kind - live in the same apartment complex and face life and love in New York.",
-        img: "/src/assets/ipad/Friends.jpg",
+        img: "/src/assets/ipad/AppleTVPics/Friends.jpg",
         genre: "Comedy - 1994",
         type: "sitcom",
     },
     {
         title: "Gilmore Girls",
         description: "In Stars Hollow, Connecticut, we meet 32-year-old Lorelai Gilmore and her teenage daughter, Rory. When Rory's attention turns from dreams of Harvard to boys and self-reliance, Lorelai notices more of her own rebellious youth in Rory.",
-        img: "/src/assets/ipad/GilmoreGirls.jpg",
+        img: "/src/assets/ipad/AppleTVPics/GilmoreGirls.jpg",
         genre: "Comedy - 2000",
         type: "sitcom",
     },
     {
         title: "How I met your mother",
         description: "Ted's epic search for his soul mate is told largely through flashbacks, as an adult Ted recounts to his kids how he met their mother.\n",
-        img: "/src/assets/ipad/Himym.jpg",
+        img: "/src/assets/ipad/AppleTVPics/Himym.jpg",
         genre: "Comedy - 2005",
         type: "sitcom",
     },
@@ -77,14 +77,14 @@ const continueWatchingData = [
     {
         title: "La isla de las tentaciones",
         description: "Cinco parejas ponen a prueba su relación conviviendo por separado en unas lujosas villas con un grupo de solteros/as en busca del amor. ¿Serán capaces de resistir a la tentación?",
-        img: "/src/assets/ipad/LaIsla.jpg",
+        img: "/src/assets/ipad/AppleTVPics/LaIsla.jpg",
         genre: "Reality - 2025",
         type: "tvshow",
     },
     {
         title: "Black Mirror",
         description: "An anthology series that explores a twisted, high-tech multiverse where humanity's greatest innovations and darkest instincts collide.",
-        img: "/src/assets/ipad/BlackMirror.jpg",
+        img: "/src/assets/ipad/AppleTVPics/BlackMirror.jpg",
         genre: "Sci-Fi - 2011",
         type: "tvshow",
     }
@@ -105,7 +105,7 @@ const AppleTV = () => {
             <div className="flex justify-between items-center px-4 py-0.5 bg-gray-800 mx-3 rounded-full">
                 <button>
                     <img
-                        src="/src/assets/ipad/tabbar.svg"
+                        src="/src/assets/ipad/AppleTVPics/tabbar.svg"
                         alt="Tab Bar"
                         className="w-6 h-auto"
                     />
@@ -113,7 +113,7 @@ const AppleTV = () => {
                 <button className="text-white">Home</button>
                 <button className="bg-gray-700 p-3 rounded-3xl">
                     <img
-                        src="/src/assets/ipad/appletv.png"
+                        src="/src/assets/ipad/AppleTVPics/appletv.png"
                         alt="Apple TV Logo"
                         className="w-10 h-auto"
                     />

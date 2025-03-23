@@ -4,33 +4,33 @@ const PodcastEpisodes = [
     {
         title: "Piano",
         description: "Learn more about this in the Music app",
-        img: "https://perfumes24h.com/static/imagenes/productos/product_info/BXqi4rf9LR8mmUdV_961.webp",
+        img: "/src/assets/ipad/PodcastPics/Piano.webp",
         // img: "https://carusopianos.com/images/stories/virtuemart/product/steinway_m_255902_pink_2__1686243141_38.jpg",
     },
     {
         title: "Fitness",
         description: "Learn more about this in the Health app",
-        img: "https://files.merca20.com/uploads/2024/10/Designer-8.jpeg",
+        img: "/src/assets/ipad/PodcastPics/Treadmill.jpeg",
     },
     {
         title: "Traveling",
         description: "Learn more about this in the Google Maps app",
-        img: "https://eurocitymalta.com/wp-content/uploads/2024/05/B08931.webp",
+        img: "/src/assets/ipad/PodcastPics/Suitcase.webp",
     },
     {
         title: "Reading",
         description: "Learn more about this in the Books app",
-        img: "https://rukminim2.flixcart.com/image/720/864/xif0q/book/0/z/z/-original-imahyywmykxb7xrz.jpeg?q=60&crop=false",
+        img: "/src/assets/ipad/PodcastPics/BarbieBook.webp",
     },
     {
         title: "Coding",
         description: "Learn more about this in the GitHub app",
-        img: "https://a-static.mlcdn.com.br/450x450/laptop-infantil-barbie-dream-30-atividades-candide/magazineluiza/183737200/d0ce723e595421e5620e4a217949ba64.jpg",
+        img: "/src/assets/ipad/PodcastPics/BarbieComputer.webp",
     },
     {
         title: "Languages",
         description: "Learn more about this in the Duolingo app",
-        img: "https://i.ytimg.com/vi/uvvejQXwdT0/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCWZijoahhGNvkcVtq6P5NPi6cuJQ",
+        img: "/src/assets/ipad/PodcastPics/PinkLanguages.jpg",
     },
 ];
 

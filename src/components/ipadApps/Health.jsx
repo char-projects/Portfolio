@@ -41,17 +41,17 @@ const FavoriteRecipes = [
     {
         title: "Sweet potato bowl",
         description: "A nutritious meal made with roasted veggies and sweet potatoes, eggs, chickpeas, some greens and a tangy dressing.",
-        img: "https://myfoodbook.com.au/sites/default/files/styles/card_molo/public/recipe_photo/Barley-bowl-with-soft-egg_0606.jpg",
+        img: "/src/assets/ipad/HealthPics/Bowl.jpg",
     },
     {
         title: "Käsespätzle",
         description: "A traditional German dish made with egg noodles, lots of cheese, and caramelized onions. Comfort food at its best!",
-        img: "https://ich-liebe-kaese.at/fileadmin/_processed_/f/2/csm_rezept-allgaeuer-kaesespaetzle-milkana-kaese-brotzeit-0465_1ad815465b.jpg",
+        img: "/src/assets/ipad/HealthPics/Spaetzle.jpg",
     },
     {
         title: "Chia Pudding",
         description: "Chia seeds, milk, protein powder, nuts, fresh berries, and a drizzle of honey. A healthy breakfast option!",
-        img: "https://www.eatingbirdfood.com/wp-content/uploads/2023/12/chia-pudding-angled-500x500.jpg",
+        img: "/src/assets/ipad/HealthPics/Chiapudding.webp",
     },
 ];
 

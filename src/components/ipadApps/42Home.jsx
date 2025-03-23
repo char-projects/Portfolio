@@ -90,9 +90,9 @@ const Intra42Home = () => {
                 {/* Sidebar */}
                 <aside className="w-14 bg-gray-600 flex flex-col items-center py-6 space-y-10">
                     <img
-                        src="https://profile.intra.42.fr/assets/42_logo-7dfc9110a5319a308863b96bda33cea995046d1731cebb735e41b16255106c12.svg"
+                        src="/src/assets/ipad/42_Logo.svg"
                         alt="42 Logo"
-                        className="h-7"
+                        className="h-10 -mb-2"
                     />
                     <FiUser className="text-gray-400 text-2xl" />
                     <FiLayers className="text-gray-400 text-2xl" />

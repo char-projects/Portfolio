@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import iPhone from "/src/assets/ipad/phone.png";
+import iPhone from "/src/assets/ipad/FindMyPics/phone.png";
 
 const devices = [
     {
@@ -7,7 +7,7 @@ const devices = [
         status: "Online",
         location: "Málaga, Spain",
         lastSeen: "5 minutes ago",
-        icon: "https://statici.icloud.com/fmipmobile/deviceImages-9.0/iPad/iPad13,1-1-1-0/online-sourcelist__2x.png",
+        icon: "/src/assets/ipad/FindMyiPad.png",
         isLost: false,
     },
     {
@@ -23,7 +23,7 @@ const devices = [
         status: "Online",
         location: "Kano, Nigeria",
         lastSeen: "30 minutes ago",
-        icon: "https://statici.icloud.com/fmipmobile/deviceImages-9.0/Accessory/AirPods_8228-0/offline-sourcelist__2x.png",
+        icon: "/src/assets/ipad/Airpods.png",
         isLost: true,
     },
 ];

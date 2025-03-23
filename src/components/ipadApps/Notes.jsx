@@ -84,7 +84,7 @@ const Notes = () => {
                             <button
                                 className="w-7 h-7 flex items-center justify-center rounded-full shadow-md hover:scale-110 transition"
                             >
-                                <img src="https://cdsassets.apple.com/live/7WUAS350/images/inline-icons/ios14-notes-compose-icon.png" alt="Compose" />
+                                <img src="/src/assets/ipad/NotePics/Compose_note.png" alt="Compose" />
                             </button>
                         </div>
                     </div>
@@ -96,19 +96,17 @@ const Notes = () => {
                 <div className="flex mt-6 justify-between items-center">
                     <button onClick={() => setShowOverview(true)} className="text-lg">
                         <img
-                            src="/src/assets/ipad/yellowtabs.svg"
+                            src="/src/assets/ipad/NotePics/yellowtabs.svg"
                             alt="Tab Bar"
                             className="w-7 h-auto"
                         />
                     </button>
                     <div className="flex space-x-8 justify-between items-center">
                         <button className="w-5 h-auto">
-                            <img src="https://help.apple.com/assets/678AF46AA04C868D18009087/678AF474745EBFF5C9036358/en_US/f87b785297032d74e71028ef85b12e70.png"
-                                 alt="Share" />
+                            <img src="/src/assets/ipad/NotePics/Share.png" alt="Share" />
                         </button>
                         <button className="w-6 h-auto">
-                            <img src="https://help.apple.com/assets/678AF46AA04C868D18009087/678AF474745EBFF5C9036358/en_US/83bb5337b1a6573c132eb417462d2e84.png"
-                                 alt="Draw" />
+                            <img src="/src/assets/ipad/NotePics/Draw.png" alt="Draw" />
                         </button>
                         <button className="w-5 h-5 border-2 border-[#fbbc04] text-[#fbbc04] flex items-center justify-center rounded-full text-xl font-bold relative">
                             <span className="text-lg font-bold leading-none" style={{ transform: "translateY(-3px)" }}>...</span>
@@ -116,7 +114,7 @@ const Notes = () => {
                         <button
                             className="w-6 h-6 flex items-center justify-center rounded-full shadow-md hover:scale-110 transition"
                         >
-                            <img src="https://cdsassets.apple.com/live/7WUAS350/images/inline-icons/ios14-notes-compose-icon.png" alt="Compose" />
+                            <img src="/src/assets/ipad/NotePics/Compose_note.png" alt="Compose" />
                         </button>
                     </div>
                 </div>
@@ -127,7 +125,7 @@ const Notes = () => {
                     </div>
                     <div className="px-28 flex flex-row items-center justify-between">
                         <img
-                            src="https://help.apple.com/assets/678AF46AA04C868D18009087/678AF474745EBFF5C9036358/en_US/bd231f41188e8fab3855060c37a765ef.png"
+                            src="/src/assets/ipad/NotePics/Aa.png"
                             alt="Aa"
                             className="w-7 h-auto"
                         >
@@ -143,7 +141,7 @@ const Notes = () => {
                             className="w-8 h-6"
                         />
                         <img
-                            src="https://cdsassets.apple.com/live/7WUAS350/images/inline-icons/ios-18-notes-attachment-icon.png"
+                            src="/src/assets/ipad/NotePics/Attach.png"
                             alt="Attach"
                             className="w-10 h-auto pl-4"
                         >

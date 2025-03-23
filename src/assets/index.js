@@ -10,7 +10,6 @@ import fractol from "./works/fractol.png";
 import minishell from "./works/minishell.png";
 import pushswap from "./works/pushswap.png";
 import profile_pic from "./about/profile_pic.jpg";
-import book_icon from "./book_icon.jpg";
 import arrow from "./arrow.svg";
 import ipad from "./ipad.png";
 import gym from "./about/gym.png";
@@ -33,16 +32,16 @@ import c from "./tech/c.png";
 import threejs from "./tech/threejs.svg";
 import nasa from "./works/nasa.png";
 import virtualbox from "./tech/virtualbox.svg";
-import dancing from "./ipad/ballroom-dancing.png";
-import dumbbell from "./ipad/dumbbell.png";
-import padel from "./ipad/padel.png";
-import iceskates from "./ipad/ice-skates.png";
-import skis from "./ipad/skis.png";
-import surfing from "./ipad/surf-board.png";
-import applemusic from "./ipad/applemusic.png";
+import dancing from "./ipad/HealthPics/ballroom-dancing.png";
+import dumbbell from "./ipad/HealthPics/dumbbell.png";
+import padel from "./ipad/HealthPics/padel.png";
+import iceskates from "./ipad/HealthPics/ice-skates.png";
+import skis from "./ipad/HealthPics/skis.png";
+import surfing from "./ipad/HealthPics/surf-board.png";
+import applemusic from "./ipad/MusicPics/applemusic.png";
 import olympus from "./ipad/olympus.png";
-import noteslist from "./ipad/Notes_List.png";
-import notestable from "./ipad/Notes_Table.png";
+import noteslist from "./ipad/NotePics/Notes_List.png";
+import notestable from "./ipad/NotePics/Notes_Table.png";
 
 export {
   logo,
@@ -76,7 +75,6 @@ export {
   pushswap,
   profile_pic,
   gym,
-  book_icon,
   arrow,
   ipad,
   virtualbox,

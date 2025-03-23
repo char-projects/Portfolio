@@ -3,7 +3,7 @@ import React from 'react';
 const videoData = [
     {
         title: "\"Hello, World\" in 5 CURSED languages\n",
-        img: "https://i.ytimg.com/vi/ehbSTazdhbU/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAavpZWmiDbq6oh53_u8MFTwXVajA",
+        img: "/src/assets/ipad/YouTubePics/HelloWorld.avif",
         channel: "Dreams of Code",
         views: "561K views",
         time: "13:06",
@@ -11,7 +11,7 @@ const videoData = [
     },
     {
         title: "A Sudoku Secret To Blow Your Mind",
-        img: "https://i.ytimg.com/vi/pezlnN4X52g/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDeHzXKqfsOM9bHzcR_93oVQC02pA",
+        img: "/src/assets/ipad/YouTubePics/Sudoku.avif",
         channel: "Numberphile",
         views: "2.4M views",
         time: "6:07",
@@ -20,7 +20,7 @@ const videoData = [
     },
     {
         title: "Machine Learning Explained in 100 Seconds",
-        img: "https://i.ytimg.com/vi/PeMlggyqz0Y/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLAazMKUc5M6zEggGTxLBkR4hoCB0Q",
+        img: "/src/assets/ipad/YouTubePics/MachineLearning.avif",
         channel: "Fireship",
         views: "742K views",
         time: "2:34",
@@ -28,7 +28,7 @@ const videoData = [
     },
     {
         title: "How to find a job as a software developer",
-        img: "https://i.ytimg.com/vi/hW5s_UUO1RI/hq720.jpg?sqp=-oaymwEnCNAFEJQDSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBfC21IAueYHBot9G8TSmfWkrdrAg",
+        img: "/src/assets/ipad/YouTubePics/Job.avif",
         channel: "ThePrimeagen",
         views: "362K views",
         time: "5:09",
@@ -36,7 +36,7 @@ const videoData = [
     },
     {
         title: "How Does Perlin Noise Work?",
-        img: "https://i.ytimg.com/vi/9B89kwHvTN4/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLCX28BqQVBaEd5jXFzjpOKzOucxTw",
+        img: "/src/assets/ipad/YouTubePics/Perlin.avif",
         channel: "Doggo's Science 2",
         views: "3.7K views",
         time: "4:28",
@@ -44,7 +44,7 @@ const videoData = [
     },
     {
         title: "Fire Tornado Explained",
-        img: "https://i.ytimg.com/vi/vJVertGZJUM/hqdefault.jpg?sqp=-oaymwEnCOADEI4CSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLBCzkSQaD2Npgp1rYBa4pGaPtYnLA",
+        img: "/src/assets/ipad/YouTubePics/FireTornado.avif",
         channel: "Discovery",
         views: "239K views",
         time: "1:29",
@@ -52,7 +52,7 @@ const videoData = [
     },
     {
         title: "Potter Puppet Pals: The Mysterious Ticking Noise",
-        img: "https://i.ytimg.com/vi/Tx1XIm6q4r4/hqdefault.jpg?sqp=-oaymwFBCOADEI4CSFryq4qpAzMIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB8AEB-AHmAoAC8AGKAgwIABABGGUgZShlMA8=&rs=AOn4CLC232o3Aa3EWZAgGMzhBopDFCmC9A",
+        img: "/src/assets/ipad/YouTubePics/PuppetPals.avif",
         channel: "Neil Cicierega",
         views: "207M views",
         time: "2:06",
@@ -66,7 +66,7 @@ const YouTube = () => {
             {/* Top Bar */}
             <div className="flex items-center justify-between px-6 py-4 bg-black">
                 <img
-                    src="/src/assets/ipad/youtube.png"
+                    src="/src/assets/ipad/YouTubePics/youtube.png"
                     alt="YouTube Logo"
                     className="w-24 h-auto"
                 />
