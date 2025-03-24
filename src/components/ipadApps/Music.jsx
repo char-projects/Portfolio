@@ -1,22 +1,32 @@
 import React, { useState, useEffect, useRef } from "react";
-import { applemusic } from "../../assets/index.js";
+import {
+    applemusic,
+    california,
+    concerto,
+    dopamine,
+    mama,
+    nuvole, riverflows,
+    shot,
+    taumichauf,
+    toomuch
+} from "../../assets/index.js";
 import { IoIosPlay, IoIosPause, IoIosSkipBackward, IoIosSkipForward } from "react-icons/io";
 
 const favoriteSongs = [
     {
         title: "tau mich auf",
         artist: "Zartmann",
-        coverArt: "/src/assets/ipad/MusicPics/Taumichauf.webp",
+        coverArt: taumichauf,
     },
     {
         title: "Mama",
         artist: "My Chemical Romance",
-        coverArt: "/src/assets/ipad/MusicPics/Mama.webp",
+        coverArt: mama,
     },
     {
         title: "Too much",
         artist: "Dove Cameron",
-        coverArt: "/src/assets/ipad/MusicPics/Toomuch.webp",
+        coverArt: toomuch,
     },
 ];
 
@@ -24,17 +34,17 @@ const favoriteAlbums = [
     {
         title: "Dopamine",
         artist: "Madelline",
-        coverArt: "/src/assets/ipad/MusicPics/Dopamine.webp",
+        coverArt: dopamine,
     },
     {
         title: "SHOT",
         artist: "No Maka, ILBF",
-        coverArt: "/src/assets/ipad/MusicPics/Shot.webp",
+        coverArt: shot,
     },
     {
         title: "California",
         artist: "White 2115",
-        coverArt: "/src/assets/ipad/MusicPics/California.webp",
+        coverArt: california,
     },
 ];
 
@@ -42,17 +52,17 @@ const classical = [
     {
         title: "Nuvole Bianche",
         artist: "Ludovico Einaudi",
-        coverArt: "/src/assets/ipad/MusicPics/Nuvole.webp",
+        coverArt: nuvole,
     },
     {
         title: "Concerto No. 4 in F Minor",
         artist: "Antonio Vivaldi",
-        coverArt: "/src/assets/ipad/MusicPics/Concerto.webp",
+        coverArt: concerto,
     },
     {
         title: "River Flows in You",
         artist: "Yiruma",
-        coverArt: "/src/assets/ipad/MusicPics/RiverFlows.webp",
+        coverArt: riverflows,
     },
 ];
 
@@ -70,7 +80,7 @@ const MusicApp = () => {
     const [isPlaying, setIsPlaying] = useState(false);
     const [currentSong, setCurrentSong] = useState(null);
     const footerRef = useRef(null);
-    const [footerHeight, setFooterHeight] = useState(0);
+    const [, setFooterHeight] = useState(0);
 
     const togglePlay = () => setIsPlaying(!isPlaying);
 

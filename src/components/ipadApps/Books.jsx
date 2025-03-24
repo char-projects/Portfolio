@@ -1,4 +1,17 @@
 import React, { useState } from "react";
+import {
+    bastard, bravenewworld,
+    crime,
+    hp_de,
+    hp_en,
+    hp_es,
+    hp_pl,
+    hp_pt,
+    hp_ru,
+    javabook, searchicon,
+    tender,
+    tongdao
+} from "../../assets/index.js";
 
 const Books = () => {
     const [isModalOpen, setIsModalOpen] = useState(false);
@@ -8,73 +21,73 @@ const Books = () => {
             title: "Crime and Punishment",
             author: "F. Dostoevsky",
             category: "Haunting Masterpieces",
-            cover: "/src/assets/ipad/BookPics/Crime.webp",
+            cover: crime,
         },
         {
             title: "Harry Potter i kamień filozoficzny",
             author: "J.K. Rowling",
             category: "Language Learning",
-            cover: "/src/assets/ipad/BookPics/HP_PL.webp",
+            cover: hp_pl,
         },
         {
             title: "Harry Potter e a cámara dos segredos",
             author: "J.K. Rowling",
             category: "Language Learning",
-            cover: "/src/assets/ipad/BookPics/HP_PT.jpeg",
+            cover: hp_pt,
         },
         {
             title: "Гарри Поттер и узник Азкабана",
             author: "Дж. К. Роулинг",
             category: "Language Learning",
-            cover: "/src/assets/ipad/BookPics/HP_RU.jpeg",
+            cover: hp_ru,
         },
         {
             title: "Harry Potter and the goblet of fire",
             author: "J.K. Rowling",
             category: "Language Learning",
-            cover: "/src/assets/ipad/BookPics/HP_EN.jpeg",
+            cover: hp_en,
         },
         {
             title: "Harry Potter y la orden del fénix",
             author: "J.K. Rowling",
             category: "Language Learning",
-            cover: "/src/assets/ipad/BookPics/HP_ES.webp",
+            cover: hp_es,
         },
         {
             title: "Harry Potter und der Halbblutprinz",
             author: "J.K. Rowling",
             category: "Language Learning",
-            cover: "/src/assets/ipad/BookPics/HP_DE.jpg",
+            cover: hp_de,
         },
         {
             title: "Tender is the Flesh",
             author: "A. Bazterrica",
             category: "Haunting Masterpieces",
-            cover: "/src/assets/ipad/BookPics/Tender.webp",
+            cover: tender,
         },
         {
             title: "Bastard Out of Carolina",
             author: "D. Allison",
             category: "Haunting Masterpieces",
-            cover: "/src/assets/ipad/BookPics/Bastard.webp",
+            cover: bastard,
         },
         {
             title: "Java Pro- grammierung für Anfänger",
             author: "D. Lorig",
             category: "Currently Reading",
-            cover: "/src/assets/ipad/BookPics/JavaBook.jpg",
+            cover: javabook,
         },
         {
             title: "Tóngdào Chinesisch",
             author: "C. C. Buchner",
             category: "Currently Reading",
-            cover: "/src/assets/ipad/BookPics/Tongdao.jpg",
+            cover: tongdao,
         },
         {
             title: "Brave New World",
             author: "Aldous Huxley",
             category: "Currently Reading",
-            cover: "/src/assets/ipad/BookPics/BraveNewWorld.webp",
+            cover: bravenewworld,
         },
     ];
 
@@ -136,7 +149,7 @@ const Books = () => {
                     <button>Audiobook Store</button>
                     <button>
                         <img
-                            src="/src/assets/ipad/searchicon.png"
+                            src={searchicon}
                             alt="Search Icon"
                             className="w-5 h-auto"
                         />
@@ -161,13 +174,13 @@ const Books = () => {
                         <span className="text-lightgray pt-2 text-xl inline-block"> &gt;</span>
 
                         {/* Books in this Category */}
-                        <div className="book-shelf flex overflow-x-auto gap-4 py-4">
+                        <div className="flex overflow-x-auto gap-4 py-4">
                             {books
                                 .filter((book) => book.category === category)
                                 .map((book, idx) => (
                                     <div
                                         key={idx}
-                                        className="book bg-white rounded-lg shadow-lg hover:scale-105 transform transition-all flex-shrink-0 w-[156px]"
+                                        className="book bg-white rounded-lg shadow-lg hover:scale-105 transform transition-all relative z-10 duration-200 flex-shrink-0 w-[156px]"
                                     >
                                         <img
                                             src={book.cover}

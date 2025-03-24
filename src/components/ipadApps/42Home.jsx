@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FiSearch, FiBell, FiUser, FiLayers, FiVideo, FiMessageCircle, FiBriefcase, FiSettings, FiShoppingCart } from "react-icons/fi";
-import { olympus, profile_pic } from "../../assets/index.js";
+import {fourtytwo, olympus, profile_pic} from "../../assets/index.js";
 
 const feedback = [
     { name: "EMURODZO", message: "funny. polite. very organised. proper structure. knows how to write the programs." },
@@ -89,11 +89,12 @@ const Intra42Home = () => {
             <div className="flex bg-[#00CBEC]">
                 {/* Sidebar */}
                 <aside className="w-14 bg-gray-600 flex flex-col items-center py-6 space-y-10">
-                    <img
-                        src="/src/assets/ipad/42_Logo.svg"
+                    <button><img
+                        src={fourtytwo}
                         alt="42 Logo"
                         className="h-10 -mb-2"
-                    />
+                        onClick={() => alert("Congratulations! You found an easter egg!\nThe answer to life, the universe, and everything is still... 42")}
+                    /></button>
                     <FiUser className="text-gray-400 text-2xl" />
                     <FiLayers className="text-gray-400 text-2xl" />
                     <FiVideo className="text-gray-400 text-2xl" />

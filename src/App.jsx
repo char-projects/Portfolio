@@ -34,7 +34,7 @@ const ScrollToTopButton = () => {
 const App = () => {
   return (
       <BrowserRouter>
-          <div className='relative z-0 bg-gradient-to-l from-gray-800 via-black to-gray-800'>
+          <div className='relative z-0 overflow-x-hidden bg-gradient-to-l from-gray-800 via-black to-gray-800'>
               <StarsCanvas />
               <Navbar />
               <Hero />

@@ -1,9 +1,19 @@
 import React from 'react';
+import {
+    firetornado,
+    helloworld,
+    job,
+    machinelearning,
+    perlin,
+    puppetpals,
+    sudoku,
+    youtube
+} from "../../assets/index.js";
 
 const videoData = [
     {
         title: "\"Hello, World\" in 5 CURSED languages\n",
-        img: "/src/assets/ipad/YouTubePics/HelloWorld.avif",
+        img: helloworld,
         channel: "Dreams of Code",
         views: "561K views",
         time: "13:06",
@@ -11,7 +21,7 @@ const videoData = [
     },
     {
         title: "A Sudoku Secret To Blow Your Mind",
-        img: "/src/assets/ipad/YouTubePics/Sudoku.avif",
+        img: sudoku,
         channel: "Numberphile",
         views: "2.4M views",
         time: "6:07",
@@ -20,7 +30,7 @@ const videoData = [
     },
     {
         title: "Machine Learning Explained in 100 Seconds",
-        img: "/src/assets/ipad/YouTubePics/MachineLearning.avif",
+        img: machinelearning,
         channel: "Fireship",
         views: "742K views",
         time: "2:34",
@@ -28,7 +38,7 @@ const videoData = [
     },
     {
         title: "How to find a job as a software developer",
-        img: "/src/assets/ipad/YouTubePics/Job.avif",
+        img: job,
         channel: "ThePrimeagen",
         views: "362K views",
         time: "5:09",
@@ -36,7 +46,7 @@ const videoData = [
     },
     {
         title: "How Does Perlin Noise Work?",
-        img: "/src/assets/ipad/YouTubePics/Perlin.avif",
+        img: perlin,
         channel: "Doggo's Science 2",
         views: "3.7K views",
         time: "4:28",
@@ -44,7 +54,7 @@ const videoData = [
     },
     {
         title: "Fire Tornado Explained",
-        img: "/src/assets/ipad/YouTubePics/FireTornado.avif",
+        img: firetornado,
         channel: "Discovery",
         views: "239K views",
         time: "1:29",
@@ -52,7 +62,7 @@ const videoData = [
     },
     {
         title: "Potter Puppet Pals: The Mysterious Ticking Noise",
-        img: "/src/assets/ipad/YouTubePics/PuppetPals.avif",
+        img: puppetpals,
         channel: "Neil Cicierega",
         views: "207M views",
         time: "2:06",
@@ -66,7 +76,7 @@ const YouTube = () => {
             {/* Top Bar */}
             <div className="flex items-center justify-between px-6 py-4 bg-black">
                 <img
-                    src="/src/assets/ipad/YouTubePics/youtube.png"
+                    src={youtube}
                     alt="YouTube Logo"
                     className="w-24 h-auto"
                 />

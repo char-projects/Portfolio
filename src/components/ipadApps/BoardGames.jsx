@@ -1,23 +1,24 @@
 import React from 'react';
 import styled from 'styled-components';
+import {bang, catan, chess, coltexpress, coup, humanity, raycasting, snake} from "../../assets/index.js";
 
 const games = {
     "Board Games": [
         {
             name: "Catan",
-            img: "/src/assets/ipad/BoardGamePics/Catan.jpg",
+            img: catan,
             play: "https://colonist.io/",
             buy: "https://www.amazon.com/CATAN-Board-Game-Discovery-Civilization/dp/B00U26V4VQ/ref=sr_1_2?dib=eyJ2IjoiMSJ9.aDf4BYLqvDvSvqXG8jy4Iev94xK3OUunr17NcfUL7mFbPy0uyX0uyOquucQZJeiVnx7o0an5ylq7WqU8FFqfCDLb0SwKzsyHAOIIMVNBOfPZqProCBXW0s5nd9BOF6yyerKifyFMm7ppuRhZxt7FnCHY7vafX7IEUmn9VRdcZ7bZve50Uco5ouFRfHWP725FXLnvDUDj3bJft0lDvJPa8NE700BzE9rC0vUi8oUrYwg0XnZ3LpFbt-iejk5IQyPHIp_q-SFVVbNF5OIo2OdzM31gYrU2Qb1Wfihk6C2oDiY0JipwXaupNxBmqZZrenRCTw1HkMEuz6sSjxp1SRTyjj564kaUIw-71pNavHzun1D3KjrlhwzVRu0mzhXUhLry_14--ULU-DFMYiqAP8OzcQiBoubax0N1aKZ4KjB0LTe-Af9H5ARd59H2dPcaeZFQ._d3MLtY1cmlycZ7w5OytXUGdmHCb9WRIVybQ_Rgl06U&dib_tag=se&keywords=catan&qid=1741836369&sr=8-2",
         },
         {
             name: "Chess",
-            img: "/src/assets/ipad/BoardGamePics/Chess.jpg",
+            img: chess,
             play: "https://www.chess.com/",
             buy: "https://www.pianki.com/medieval-style-giant-chess-set-24kt-gold-sterling-silver-onyx-table-chairs_p11371.html",
         },
         {
             name: "Colt Express",
-            img: "/src/assets/ipad/BoardGamePics/ColtExpress.jpg",
+            img: coltexpress,
             play: "https://en.boardgamearena.com/gamepanel?game=coltexpress",
             buy: "https://www.amazon.com/Asmodee-COLT01-Colt-Express/dp/B00OZTUQWE",
         },
@@ -25,19 +26,19 @@ const games = {
     "Card Games": [
         {
             name: "Cards Against Humanity",
-            img: "/src/assets/ipad/BoardGamePics/Humanity.jpg",
+            img: humanity,
             play: "https://pyx-1.pretendyoure.xyz/zy/game.jsp",
             buy: "https://www.amazon.com/Cards-Against-Humanity-LLC-CAHUS/dp/B004S8F7QM?ref_=ast_sto_dp",
         },
         {
             name: "Coup",
-            img: "/src/assets/ipad/BoardGamePics/Coup.webp",
+            img: coup,
             play: "https://www.chickenkoup.com/",
             buy: "https://www.amazon.com/Coup-Bluffing-Players-Perfect-Friends/dp/B00GDI4HX4?th=1",
         },
         {
             name: "Bang!",
-            img: "/src/assets/ipad/BoardGamePics/Bang.jpg",
+            img: bang,
             play: "https://playbanggame.online/",
             buy: "https://www.amazon.com/Bang-Wild-West-DaVinci-Games/dp/B001Q4XWB8",
         }
@@ -48,12 +49,12 @@ const future = {
         "Games I Want to Code": [
         {
             name: "Cub3D",
-            img: "/src/assets/ipad/BoardGamePics/Raycasting.png",
+            img: raycasting,
             description: "A 3D game using the raycasting technique like in the famous Wolfenstein game",
         },
         {
             name: "Snake in Java",
-            img: "/src/assets/ipad/BoardGamePics/Snake.png",
+            img: snake,
             description: "A snake game using Java and a MySQL database with a full-featured GUI",
         },
     ],

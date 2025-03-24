@@ -1,36 +1,37 @@
 import React from "react";
+import {barbiebook, barbiecomputer, piano, pinklanguages, suitcase, treadmill} from "../../assets/index.js";
 
 const PodcastEpisodes = [
     {
         title: "Piano",
         description: "Learn more about this in the Music app",
-        img: "/src/assets/ipad/PodcastPics/Piano.webp",
+        img: piano,
         // img: "https://carusopianos.com/images/stories/virtuemart/product/steinway_m_255902_pink_2__1686243141_38.jpg",
     },
     {
         title: "Fitness",
         description: "Learn more about this in the Health app",
-        img: "/src/assets/ipad/PodcastPics/Treadmill.jpeg",
+        img: treadmill,
     },
     {
         title: "Traveling",
         description: "Learn more about this in the Google Maps app",
-        img: "/src/assets/ipad/PodcastPics/Suitcase.webp",
+        img: suitcase,
     },
     {
         title: "Reading",
         description: "Learn more about this in the Books app",
-        img: "/src/assets/ipad/PodcastPics/BarbieBook.webp",
+        img: barbiebook,
     },
     {
         title: "Coding",
         description: "Learn more about this in the GitHub app",
-        img: "/src/assets/ipad/PodcastPics/BarbieComputer.webp",
+        img: barbiecomputer,
     },
     {
         title: "Languages",
         description: "Learn more about this in the Duolingo app",
-        img: "/src/assets/ipad/PodcastPics/PinkLanguages.jpg",
+        img: pinklanguages,
     },
 ];
 

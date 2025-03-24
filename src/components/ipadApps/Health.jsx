@@ -1,5 +1,5 @@
 import React from "react";
-import { dancing, dumbbell, padel, surfing, skis, iceskates } from "../../assets";
+import {dancing, dumbbell, padel, surfing, skis, iceskates, spaetzle, chiapudding, bowl} from "../../assets";
 
 const SportsHobbies = [
     {
@@ -41,17 +41,17 @@ const FavoriteRecipes = [
     {
         title: "Sweet potato bowl",
         description: "A nutritious meal made with roasted veggies and sweet potatoes, eggs, chickpeas, some greens and a tangy dressing.",
-        img: "/src/assets/ipad/HealthPics/Bowl.jpg",
+        img: bowl,
     },
     {
         title: "Käsespätzle",
         description: "A traditional German dish made with egg noodles, lots of cheese, and caramelized onions. Comfort food at its best!",
-        img: "/src/assets/ipad/HealthPics/Spaetzle.jpg",
+        img: spaetzle,
     },
     {
         title: "Chia Pudding",
         description: "Chia seeds, milk, protein powder, nuts, fresh berries, and a drizzle of honey. A healthy breakfast option!",
-        img: "/src/assets/ipad/HealthPics/Chiapudding.webp",
+        img: chiapudding,
     },
 ];
 

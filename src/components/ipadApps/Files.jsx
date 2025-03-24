@@ -1,18 +1,21 @@
 import React from "react";
 import { FileText, Download } from "lucide-react";
+import {resume} from "../../assets/index.js";
 
 const files = [
     { name: "Resume.pdf", type: "pdf", download: true },
     { name: "Project Idea.txt", type: "txt" },
+    { name: "Not a virus.exe", type: "exe" },
     { name: "App Design Mockup.fig", type: "fig" },
     { name: "Marketing Plan.ppt", type: "ppt" },
     { name: "Code Snippets.js", type: "js" },
+    { name: "DO NOT OPEN.jpg", type: "jpg", alert: true },
     { name: "Poems.docx", type: "docx" },
 ];
 
 const Files = () => {
     return (
-        <div className="h-screen pt-12 bg-gray-900 text-white p-6">
+        <div className="h-full pt-12 bg-gray-900 text-white p-6">
             {/* Navigation Bar */}
             <div className="flex items-center justify-between p-4 bg-gray-800 rounded-lg shadow-md">
                 <div className="text-2xl font-semibold">Files</div>
@@ -27,11 +30,16 @@ const Files = () => {
                     >
                         {/* Icon */}
                         {file.download ? (
-                            <a href="/src/assets/ipad/resume.pdf" download>
+                            <a href={resume} download>
                                 <Download className="w-16 h-16 text-blue-400" />
                             </a>
-                        ) : (
-                            <FileText className="w-16 h-16 text-gray-400" />
+                        ) : file.alert ? (
+                                <button>
+                                    <FileText className="w-16 h-16 text-gray-400"
+                                    onClick={() => alert("Congratulations! You found an easter egg!\nBut seriously, you were told NOT to open it!!")}/>
+                                </button>
+                            ) : (
+                                <FileText className="w-16 h-16 text-gray-400" />
                         )}
 
                         {/* File Name */}

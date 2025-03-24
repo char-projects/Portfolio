@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Search, Mic } from "lucide-react";
-import { noteslist, notestable } from "../../assets/index.js";
+import {aa, attach_note, compose, draw, noteslist, notestable, share, yellowtabs} from "../../assets/index.js";
 
 const Notes = () => {
     const [selectedNote, setSelectedNote] = useState(1);
@@ -13,25 +13,25 @@ const Notes = () => {
         },
         {
             id: 2, title: "Programming Wishlist",
-            content: "- Learn C#\n- Build a 3D game\n- Make a website with TypeScript\n- Start a project using Node.js for the backend\n- Learn more about servers"
+            content: "- Learn Java\n- Build a 3D game\n- Make a website with TypeScript\n- Start a project using Node.js for the backend\n- Learn more about servers"
         },
         {
-            id: 3, title: "The Grind",
-            content: "Today I awoke, and the world seemed broken.\n" +
-                "Another pound of flesh to the landlords and banks,\n" +
-                "The real masters to whom we’re beholden.\n" +
-                "A grimacing smile tinged with blood is my thanks.\n" +
-                "One offer after another, we just can’t refuse\n" +
-                "A diagnosis away from disaster most days.\n" +
-                "Accept this as normal, embrace the abuse\n" +
-                "We’ve sold out, we all owe, we all pay.\n" +
-                "It is possible that one day, if you work hard\n" +
-                "You can share more of this wonderful pie,\n" +
-                "Just look up your sleeve, you’ll find that card\n" +
-                "that suckers believe is there, ‘til they die.\n" +
-                "But don’t give up hope, I’m sure it’s all fine,\n" +
-                "40 more years of grinding may leave enough time.\n" +
-                "\n- Michael [hellopoetry.com]"
+            id: 3, title: "Solving a crime in SQL",
+            content: "Fiftyville Case (CS50)\n" +
+                "- Execute .schema to see tables in database\n" +
+                "- SELECT crime scene reports that match date and location\n" +
+                "- Use interviews to find leads — look for mentions of transactions, travel, or calls\n" +
+                "- Check atm_transactions for withdrawals and bank account numbers\n" +
+                "- Use security_logs to see which cars were there\n" +
+                "- Find owners via people (match license plates)\n" +
+                "- Check flights, passport numbers and phone numbers\n" +
+                "- Cross-check passengers with suspects from ATM and car data\n" +
+                "- Use phone_calls to find short calls between suspects\n" +
+                "- Accomplice should be in security_logs but not on the flight"
+        },
+        {
+            id: 4, title: "Bucket List",
+            content: "- Curaçao\n- Salar de Uyuni, Bolivia\n- Sri Lanka\n- Angkor Wat, Cambodia\n- Mozambique\n- Petra, Jordan\n- Cyprus\n- Bocas del Toro, Panama\n- Tahiti\n- Tajikistan\n- Lapland, Finland\n- Fiji\n- Sahara Desert, Algeria\n"
         },
     ];
 
@@ -84,7 +84,7 @@ const Notes = () => {
                             <button
                                 className="w-7 h-7 flex items-center justify-center rounded-full shadow-md hover:scale-110 transition"
                             >
-                                <img src="/src/assets/ipad/NotePics/Compose_note.png" alt="Compose" />
+                                <img src={compose} alt="Compose" />
                             </button>
                         </div>
                     </div>
@@ -96,17 +96,17 @@ const Notes = () => {
                 <div className="flex mt-6 justify-between items-center">
                     <button onClick={() => setShowOverview(true)} className="text-lg">
                         <img
-                            src="/src/assets/ipad/NotePics/yellowtabs.svg"
+                            src={yellowtabs}
                             alt="Tab Bar"
                             className="w-7 h-auto"
                         />
                     </button>
                     <div className="flex space-x-8 justify-between items-center">
                         <button className="w-5 h-auto">
-                            <img src="/src/assets/ipad/NotePics/Share.png" alt="Share" />
+                            <img src={share} alt="Share" />
                         </button>
                         <button className="w-6 h-auto">
-                            <img src="/src/assets/ipad/NotePics/Draw.png" alt="Draw" />
+                            <img src={draw} alt="Draw" />
                         </button>
                         <button className="w-5 h-5 border-2 border-[#fbbc04] text-[#fbbc04] flex items-center justify-center rounded-full text-xl font-bold relative">
                             <span className="text-lg font-bold leading-none" style={{ transform: "translateY(-3px)" }}>...</span>
@@ -114,7 +114,7 @@ const Notes = () => {
                         <button
                             className="w-6 h-6 flex items-center justify-center rounded-full shadow-md hover:scale-110 transition"
                         >
-                            <img src="/src/assets/ipad/NotePics/Compose_note.png" alt="Compose" />
+                            <img src={compose} alt="Compose" />
                         </button>
                     </div>
                 </div>
@@ -125,7 +125,7 @@ const Notes = () => {
                     </div>
                     <div className="px-28 flex flex-row items-center justify-between">
                         <img
-                            src="/src/assets/ipad/NotePics/Aa.png"
+                            src={aa}
                             alt="Aa"
                             className="w-7 h-auto"
                         >
@@ -141,7 +141,7 @@ const Notes = () => {
                             className="w-8 h-6"
                         />
                         <img
-                            src="/src/assets/ipad/NotePics/Attach.png"
+                            src={attach_note}
                             alt="Attach"
                             className="w-10 h-auto pl-4"
                         >

@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import {duo} from "../../assets/index.js";
 
 const Duolingo = () => {
     const [streak, setStreak] = useState(() => {
@@ -58,11 +59,12 @@ const Duolingo = () => {
                     <h2 className="text-lg font-semibold">Current Streak:</h2>
                     <p className="text-xl font-bold text-[#FF7900]">🔥 {streak} days</p>
                 </div>
-                <img
-                    src="/src/assets/ipad/duo.png"
+                <button><img
+                    src={duo}
                     alt="Duo the Owl"
                     className="w-12 h-12"
-                />
+                    onClick={() => alert("Congratulations! You found an easter egg!\nDuo is watching... Better do your lessons!")}
+                /></button>
             </div>
         </div>
     );

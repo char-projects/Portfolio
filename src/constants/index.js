@@ -17,11 +17,13 @@ import {
   nasa,
   spatialcomp,
   database,
-  white,
   fractol,
   minishell,
   pushswap,
   virtualbox,
+  uma,
+  harvard,
+  london, pancake_stack,
 } from "../assets";
 
 export const navLinks = [
@@ -46,14 +48,14 @@ export const navLinks = [
 const services = [
   {
     title: "Full-Stack Developer",
+    icon: pancake_stack,
+  },
+  {
+    title: "Low-level Programmer",
     icon: database,
   },
   {
-    title: "Gym Addict",
-    icon: gym,
-  },
-  {
-    title: "Technical Developer",
+    title: "Software Developer",
     icon: engineer,
   },
   {
@@ -121,7 +123,7 @@ const experiences = [
   {
     title: "B.A. Marketing and Market Research",
     company_name: "Universidad de Málaga",
-    icon: white,
+    icon: uma,
     iconBg: "#FFFFFF",
     date: "09/2022 - 07/2025",
     points: [
@@ -134,7 +136,7 @@ const experiences = [
   {
     title: "CS50 - Computer Science",
     company_name: "Harvard",
-    icon: white,
+    icon: harvard,
     iconBg: "#FFFFFF",
     date: "04/2024 - 06/2024",
     points: [
@@ -146,7 +148,7 @@ const experiences = [
   {
     title: "Bootcamp - Coding Fundamentals",
     company_name: "42 London",
-    icon: white,
+    icon: london,
     iconBg: "#FFFFFF",
     date: "08/2024",
     points: [
@@ -159,7 +161,7 @@ const experiences = [
   {
     title: "Core Curriculum - Full-Stack Development",
     company_name: "42 Málaga",
-    icon: white,
+    icon: london,
     iconBg: "#FFFFFF",
     date: "09/2024 - 09/2025",
     points: [

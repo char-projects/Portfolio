@@ -1,23 +1,24 @@
 import { useState, useRef, useEffect } from "react";
 import { gsap } from "gsap";
+import { ipadbg } from "../../assets/index.js";
 import {
     AppleTV,
     AppStore,
     Books,
-    Discord,
+    FourtyTwoHome,
     Duolingo,
     Files,
     FindMy,
     GoogleMaps,
     Health,
-    Messages,
+    Hackathons,
     Music,
     Notes,
     Pinterest,
     Podcasts,
     Safari,
     Settings,
-    Steam,
+    BoardGames,
     Terminal,
     YouTube
 } from "../ipadApps/index.js";
@@ -37,7 +38,7 @@ const rawApps = [
     },
     {
         title: "Messages",
-        content: () => <Messages />,
+        content: () => <Hackathons />,
     },
     {
         title: "GitHub",
@@ -45,7 +46,7 @@ const rawApps = [
     },
     {
         title: "Discord",
-        content: () => <Discord />,
+        content: () => <FourtyTwoHome />,
     },
     {
         title: "Books",
@@ -81,7 +82,7 @@ const rawApps = [
     },
     {
         title: "Steam",
-        content: () => <Steam />,
+        content: () => <BoardGames />,
     },
     {
         title: "Duolingo",
@@ -183,7 +184,7 @@ const Ipad = () => {
                 id="ipad-container"  // ADDED THIS ID
                 className="relative w-[578px] h-[800px] rounded-[40px] overflow-hidden flex items-center justify-center shadow-2xl shadow-gray-500"
                 style={{
-                    backgroundImage: "url('/src/assets/ipad.png')",
+                    backgroundImage: `url(${ipadbg})`,
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                 }}

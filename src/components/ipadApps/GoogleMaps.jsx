@@ -1,47 +1,48 @@
 import React, {useState, useRef} from "react";
 import {MapPin, Home} from "lucide-react";
 import {motion} from "framer-motion";
+import {baru, bavaria, berlengas, fes, gdansk, kerry, malaga, vinicunca} from "../../assets/index.js";
 
 const travelSpots = [
     {
         id: 1,
         name: "Barú, Colombia",
-        img: "/src/assets/ipad/GoogleMapsPics/Baru.jpeg",
+        img: baru,
         description: "Tropical white beaches, bioluminescent plankton & tiny islands",
         mapLink: "https://maps.app.goo.gl/QSsFZHDUaVUrRT2B9",
     },
     {
         id: 2,
         name: "Fès, Morocco",
-        img: "/src/assets/ipad/GoogleMapsPics/Fes.webp",
+        img: fes,
         description: "Colorful markets and tanneries in the ancient medina",
         mapLink: "https://maps.app.goo.gl/tYSWUs4pTp4rGAP58",
     },
     {
         id: 3,
         name: "Berlengas, Portugal",
-        img: "/src/assets/ipad/GoogleMapsPics/Berlengas.jpeg",
+        img: berlengas,
         description: "Stunning beaches, a cool castle & endless water",
         mapLink: "https://maps.app.goo.gl/rBcZ99bkAhp6XqWK9",
     },
     {
         id: 4,
         name: "Vinicunca, Peru",
-        img: "/src/assets/ipad/GoogleMapsPics/Vinicunca.avif",
+        img: vinicunca,
         description: "Mesmerizing rainbow mountains, snow & alpacas",
         mapLink: "https://maps.app.goo.gl/byYmMadCETEv23Fq8",
     },
     {
         id: 5,
         name: "Gdańsk, Poland",
-        img: "/src/assets/ipad/GoogleMapsPics/Gdansk.jpeg",
+        img: gdansk,
         description: "Colorful houses & great food",
         mapLink: "https://maps.app.goo.gl/cUqHwrUei7XUznkN8",
     },
     {
         id: 6,
         name: "Kerry, Ireland",
-        img: "/src/assets/ipad/GoogleMapsPics/Kerry.jpeg",
+        img: kerry,
         description: "Sheep, insane nature, cows & more sheep",
         mapLink: "https://maps.app.goo.gl/5ZcJk3WNxSgtJyiz5",
     },
@@ -51,14 +52,14 @@ const home = [
     {
         id: 1,
         name: "Bavaria, Germany",
-        img: "/src/assets/ipad/GoogleMapsPics/Bavaria.jpg",
+        img: bavaria,
         description: "I spent most of my life there. It's a great place to grow up in",
         mapLink: "https://maps.app.goo.gl/kTAuUGjcaYSoxvKz5",
     },
     {
         id: 2,
         name: "Málaga, Spain",
-        img: "/src/assets/ipad/GoogleMapsPics/Malaga.jpg",
+        img: malaga,
         description: "I've spent almost 3 years here. I love the beach and the sun",
         mapLink: "https://maps.app.goo.gl/tYSWUs4pTp4rGAP58",
     },
@@ -66,17 +67,17 @@ const home = [
 
 const GoogleMaps = () => {
     const [showEasterEgg, setShowEasterEgg] = useState(false);
-    const contentRef = useRef(null);
+    const homeRef = useRef(null);
 
     const handleHomeButtonClick = () => {
         setShowEasterEgg(!showEasterEgg);
-        if (contentRef.current) {
-            contentRef.current.scrollTo({
-                bottom: 200, // Adjust the number to scroll by the desired amount
-                behavior: "smooth",
-            });
-        };
+        setTimeout(() => {
+            if (homeRef.current) {
+                homeRef.current.scrollIntoView({ block: "center" });
+            }
+        }, 100); // Small delay to ensure the section is rendered first
     };
+
     return (
         <div className="relative bg-gray-900 text-white min-h-screen w-full p-4">
             {/* Floating Search Bar */}
@@ -123,7 +124,7 @@ const GoogleMaps = () => {
                 </motion.div>
             </div>
             {showEasterEgg && (
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+                <div ref={homeRef} className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
                     {home.map((place) => (
                         <div
                             key={place.id}
