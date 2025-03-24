@@ -35,7 +35,7 @@ const rightSection = [
         items: [
             { name: "Songs", value: "9" },
             { name: "Videos", value: "7" },
-            { name: "Photos", value: "28" },
+            { name: "Easter Eggs", value: "5" },
             { name: "Applications", value: "21" },
             { name: "Capacity", value: "64 GB" },
             { name: "Available", value: "42,42 GB" },
