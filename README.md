@@ -25,6 +25,6 @@ Welcome to my portfolio! This site is a reflection of my journey in programming,
 ## 🔗 Demo
 
 You can view my live portfolio here:  
-[Portfolio Demo](your-portfolio-link)
+[Portfolio Demo](https://char-projects.github.io)
 
 Feel free to explore and interact with the different sections of my portfolio!
